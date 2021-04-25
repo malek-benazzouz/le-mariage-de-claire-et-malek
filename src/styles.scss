@@ -1,3 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/scss/bootstrap';
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.font-family-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
