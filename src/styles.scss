@@ -1,14 +1,21 @@
 @import '~bootstrap/scss/bootstrap';
 
-// Fonts
+//-- Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500&display=swap');
 
-body {
+.font-family-main {
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 500;
 }
 
-.font-family-dancing-script {
+.font-family-cursive {
   font-family: 'Dancing Script', cursive;
+}
+
+//-- Global styles
+
+body {
+  @extend .font-family-main;
+  font-size: 18px;
+  font-weight: 500;
 }

@@ -10,11 +10,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CountdownComponent } from './countdown/countdown.component';
-import { CountdownModule } from 'ngx-countdown';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,13 @@ import { LayoutModule } from '@angular/cdk/layout';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CountdownComponent
+    CountdownComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CountdownModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
