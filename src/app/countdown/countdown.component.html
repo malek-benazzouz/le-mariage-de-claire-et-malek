@@ -1,2 +1,18 @@
-<countdown #cd [config]="countdownConfig" class="d-flex justify-content-center countdown"></countdown>
-
+<div class="d-flex justify-content-around countdown" *ngIf="days$ | async">
+  <div class="text-center countdown-block">
+    <div class="h1 number">{{ days$ | async }}</div>
+    <div class="label">JOUR{{ (days$ | async) > 1 ? "S" : ""}}</div>
+  </div>
+  <div class="text-center countdown-block">
+    <div class="h1 number">{{ hours$ | async }}</div>
+    <div class="label">HEURE{{ (hours$ | async) > 1 ? "S" : ""}}</div>
+  </div>
+  <div class="text-center countdown-block">
+    <div class="h1 number">{{ minutes$ | async }}</div>
+    <div class="label">MINUTE{{ (minutes$ | async) > 1 ? "S" : ""}}</div>
+  </div>
+  <div class="text-center countdown-block">
+    <div class="h1 number">{{ seconds$ | async }}</div>
+    <div class="label">SECONDE{{ (seconds$ | async) > 1 ? "S" : ""}}</div>
+  </div>
+</div>
