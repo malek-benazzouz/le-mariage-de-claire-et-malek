@@ -1,18 +1,26 @@
-<div class="d-flex justify-content-around countdown" *ngIf="days$ | async">
-  <div class="text-center countdown-block">
-    <div class="h1 number">{{ days$ | async }}</div>
-    <div class="label">JOUR{{ (days$ | async) > 1 ? "S" : ""}}</div>
+<div class="d-flex justify-content-center countdown row no-gutters" *ngIf="days$ | async">
+  <div class="col col-12 col-md-6 d-flex justify-content-around justify-content-md-end">
+    <!-- Days -->
+    <div class="text-center countdown-block my-2 mx-md-5">
+      <div class="number">{{ days$ | async }}</div>
+      <div class="label">JOUR{{ (days$ | async) > 1 ? "S" : ""}}</div>
+    </div>
+    <!-- Hours-->
+    <div class="text-center countdown-block my-2 mx-md-5">
+      <div class="number">{{ hours$ | async }}</div>
+      <div class="label">HEURE{{ (hours$ | async) > 1 ? "S" : ""}}</div>
+    </div>
   </div>
-  <div class="text-center countdown-block">
-    <div class="h1 number">{{ hours$ | async }}</div>
-    <div class="label">HEURE{{ (hours$ | async) > 1 ? "S" : ""}}</div>
-  </div>
-  <div class="text-center countdown-block">
-    <div class="h1 number">{{ minutes$ | async }}</div>
-    <div class="label">MINUTE{{ (minutes$ | async) > 1 ? "S" : ""}}</div>
-  </div>
-  <div class="text-center countdown-block">
-    <div class="h1 number">{{ seconds$ | async }}</div>
-    <div class="label">SECONDE{{ (seconds$ | async) > 1 ? "S" : ""}}</div>
+  <div class="col col-12 col-md-6 d-flex justify-content-around justify-content-md-start">
+    <!-- Minutes -->
+    <div class="text-center countdown-block my-2 mx-md-5">
+      <div class="number">{{ minutes$ | async }}</div>
+      <div class="label">MINUTE{{ (minutes$ | async) > 1 ? "S" : ""}}</div>
+    </div>
+    <!-- Seconds -->
+    <div class="text-center countdown-block my-2 mx-md-5">
+      <div class="number">{{ seconds$ | async }}</div>
+      <div class="label">SECONDE{{ (seconds$ | async) > 1 ? "S" : ""}}</div>
+    </div>
   </div>
 </div>
