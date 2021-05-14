@@ -1,5 +1,7 @@
 # TODO
 
+- customize favicon and browser tab title
+
 ## Header
 
 - add links to 4 sections: program, accommodation, RSVP, Money pot
@@ -42,6 +44,10 @@
 ## Money pot
 
 - create money pot and add link to it
+
+## Bonus image
+
+- add picture frame to image
 
 ## Footer
 
