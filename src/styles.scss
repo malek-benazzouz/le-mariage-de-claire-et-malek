@@ -1,4 +1,23 @@
+//-- Bootstrap overrides
+
+$primary: #3f51b5;
+$secondary: #e83e8c;
+$tertiary: #17a2b8;
+
 @import '~bootstrap/scss/bootstrap';
+
+//-- Colors
+
+$white: $white;
+$gray-very-light: $gray-200;
+$gray-light: $gray-300;
+$gray-medium: $gray-400;
+$gray-dark: $gray-500;
+$gray-very-dark: $gray-600;
+$black-ish: $gray-900;
+
+$background-color: $white;
+$text-color: $black-ish;
 
 //-- Fonts
 
@@ -18,4 +37,6 @@ body {
   @extend .font-family-main;
   font-size: 18px;
   font-weight: 500;
+  background-color: $background-color;
+  color: $text-color;
 }
