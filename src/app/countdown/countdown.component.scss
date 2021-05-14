@@ -2,7 +2,7 @@
 
 .number {
   @extend .font-family-cursive;
-  color: $primary;
+  color: $secondary;
   font-size: 35px;
 
   @include media-breakpoint-up(sm) {

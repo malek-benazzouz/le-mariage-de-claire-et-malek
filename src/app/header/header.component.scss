@@ -2,8 +2,18 @@
 
 #header {
   background-color: $primary;
+  color: $tertiary;
 }
 
 .title {
   font-size: 2rem;
+}
+
+.title-part {
+  letter-spacing: 12px;
+  margin-right: -12px;
+}
+
+.separator {
+  color: $secondary;
 }
