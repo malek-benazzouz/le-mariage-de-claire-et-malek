@@ -27,6 +27,7 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { BonusComponent } from './bonus/bonus.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MatInputModule } from '@angular/material/input';
     ProgramComponent,
     AccommodationComponent,
     RsvpFormComponent,
-    MoneyPotComponent
+    MoneyPotComponent,
+    BonusComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
 //-- Bootstrap overrides
 
-$primary: #3f51b5;
-$secondary: #e83e8c;
-$tertiary: #17a2b8;
+$primary: #D3DAD0;
+$secondary: #ce0058;
+$tertiary: #495057;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -14,10 +14,11 @@ $gray-light: $gray-300;
 $gray-medium: $gray-400;
 $gray-dark: $gray-500;
 $gray-very-dark: $gray-600;
+$almost-black: $gray-700;
 $black-ish: $gray-900;
 
 $background-color: $white;
-$text-color: $black-ish;
+$text-color: $almost-black;
 
 //-- Fonts
 
