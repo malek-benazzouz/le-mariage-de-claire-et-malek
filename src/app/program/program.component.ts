@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-program',
@@ -7,8 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgramComponent implements OnInit {
 
-  constructor() { }
+  moreInfoIcon = faMapMarkerAlt;
+
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {}
+
+  openModal(content: any): void {
+    this.modalService.open(content, { centered: true });
+  }
 
 }
