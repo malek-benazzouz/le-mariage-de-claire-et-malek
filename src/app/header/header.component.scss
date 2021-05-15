@@ -3,6 +3,11 @@
 #header {
   background-color: $primary;
   color: $tertiary;
+  padding-bottom: 10px;
+}
+
+#subheader {
+  box-shadow: 0 2px 8px 0 $gray-dark;
 }
 
 .title {
@@ -25,4 +30,21 @@
 .wedding-rings-icon {
   width: 34px;
   padding-bottom: 5px;
+}
+
+.navbar-toggler {
+  font-size: 15px;
+  margin-top: 2px;
+  padding: 4px 8px;
+}
+
+.navbar-nav {
+  max-width: 1050px !important;
+  margin: auto;
+}
+
+#small-nav {
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
 }

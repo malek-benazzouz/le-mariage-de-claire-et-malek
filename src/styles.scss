@@ -35,6 +35,10 @@ $text-color: $almost-black;
 
 //-- Global styles
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend .font-family-main;
   font-size: 18px;
