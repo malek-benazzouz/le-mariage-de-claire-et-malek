@@ -20,6 +20,7 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { NgxPrintModule } from 'ngx-print';
 import { BonusComponent } from './bonus/bonus.component';
 import { ProgramComponent } from './program/program.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -52,6 +53,7 @@ import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/pr
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    NgxPrintModule,
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,

@@ -55,7 +55,7 @@
       <div class="card">
         <div class="card-body p-4 text-center">
           <img src="assets/sun.svg" alt="Soleil" style="width: 70px;" class="mb-3">
-          <h3 class="font-family-cursive mb-4">Le brunch</h3>
+          <h3 class="font-family-cursive mb-4">Le Brunch</h3>
           <p class="mb-4">
             Le dimanche 05 septembre à 11h<br>
             Domaine des Bertrands<br>
@@ -75,48 +75,69 @@
 
 <!-- More info modal - Step 1: mairie -->
 <ng-template #moreInfoMairie let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">La mairie</h4>
-    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <app-program-detail-mairie></app-program-detail-mairie>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  <div id="modal-content-mairie">
+    <div class="modal-header">
+      <h2 class="d-none d-print-block font-family-cursive">Le mariage de Claire & Malek</h2>
+      <h4 class="modal-title">La mairie</h4>
+      <button type="button" class="close d-print-none" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-program-detail-mairie></app-program-detail-mairie>
+    </div>
+    <div class="modal-footer d-print-none">
+      <button type="button" class="btn btn-primary"
+              ngxPrint printSectionId="modal-content-mairie" printTitle="Fenêtre temporaire" [useExistingCss]="true">
+        Imprimer
+      </button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+    </div>
   </div>
 </ng-template>
 
 <!-- More info modal - Step 2: wedding party -->
 <ng-template #moreInfoParty let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">La Wedding Party</h4>
-    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <app-program-detail-party></app-program-detail-party>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  <div id="modal-content-party">
+    <div class="modal-header">
+      <h2 class="d-none d-print-block font-family-cursive">Le mariage de Claire & Malek</h2>
+      <h4 class="modal-title">La Wedding Party</h4>
+      <button type="button" class="close d-print-none" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-program-detail-party></app-program-detail-party>
+    </div>
+    <div class="modal-footer d-print-none">
+      <button type="button" class="btn btn-primary"
+              ngxPrint printSectionId="modal-content-party" printTitle="Fenêtre temporaire" [useExistingCss]="true">
+        Imprimer
+      </button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+    </div>
   </div>
 </ng-template>
 
 <!-- More info modal - Step 3: brunch -->
 <ng-template #moreInfoBrunch let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">Le brunch</h4>
-    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <app-program-detail-brunch></app-program-detail-brunch>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  <div id="modal-content-brunch">
+    <div class="modal-header">
+      <h2 class="d-none d-print-block font-family-cursive">Le mariage de Claire & Malek</h2>
+      <h4 class="modal-title">Le Brunch</h4>
+      <button type="button" class="close d-print-none" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-program-detail-brunch></app-program-detail-brunch>
+    </div>
+    <div class="modal-footer d-print-none">
+      <button type="button" class="btn btn-primary"
+              ngxPrint printSectionId="modal-content-brunch" printTitle="Fenêtre temporaire" [useExistingCss]="true">
+        Imprimer
+      </button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+    </div>
   </div>
 </ng-template>
