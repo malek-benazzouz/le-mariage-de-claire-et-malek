@@ -6,48 +6,117 @@
   extraText="Antibes, Le Cannet-des-Maures"
 ></app-section-title>
 
-<!-- TODO move all this block to a timeline component? -->
-<div class="container">
-  <ul class="timeline">
-    <li>
-      <div class="timeline-badge secondary"><i class="glyphicon glyphicon-check"></i></div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-        </div>
-        <div class="timeline-body">
-          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-            filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma
-            pindureta quium dia nois paga.</p>
-        </div>
-      </div>
-    </li>
-    <li class="timeline-inverted">
-      <div class="timeline-badge secondary"><i class="glyphicon glyphicon-credit-card"></i></div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-        </div>
-        <div class="timeline-body">
-          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-            filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma
-            pindureta quium dia nois paga.</p>
+<div class="container py-5">
+  <div class="main-timeline">
+
+    <!-- Step 1: mairie -->
+    <div class="timeline left">
+      <div class="card">
+        <div class="card-body p-4 text-center">
+          <img src="assets/mairie.svg" alt="Mairie" style="width: 73px;" class="mb-3">
+          <h3 class="font-family-cursive mb-4">La mairie</h3>
+          <p class="mb-4">
+            Le samedi 04 septembre à 16h<br>
+            Mairie d'Antibes<br>
+            24 Cours Masséna, 06600 Antibes
+          </p>
+          <button type="button" class="more-info-btn btn btn-outline-light" (click)="openModal(moreInfoMairie)">
+            <fa-icon [icon]="moreInfoIcon" class="more-info-icon mr-2"></fa-icon>
+            Plus d'infos
+          </button>
         </div>
       </div>
-    </li>
-    <li>
-      <div class="timeline-badge secondary"><i class="glyphicon glyphicon-credit-card"></i></div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-        </div>
-        <div class="timeline-body">
-          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-            filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma
-            pindureta quium dia nois paga.</p>
+      <img src="assets/heart-full.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+    </div>
+
+    <!-- Step 2: wedding party -->
+    <div class="timeline right">
+      <div class="card">
+        <div class="card-body p-4 text-center">
+          <img src="assets/confetti.svg" alt="Confetti" style="width: 70px;" class="mb-4">
+          <h3 class="font-family-cursive mb-4">La Wedding Party</h3>
+          <p class="mb-4">
+            Le samedi 04 septembre à 18h<br>
+            Domaine des Bertrands<br>
+            83340 Le Cannet-des-Maures
+          </p>
+
+          <button type="button" class="more-info-btn btn btn-outline-light" (click)="openModal(moreInfoParty)">
+            <fa-icon [icon]="moreInfoIcon" class="more-info-icon mr-2"></fa-icon>
+            Plus d'infos
+          </button>
         </div>
       </div>
-    </li>
-  </ul>
+      <img src="assets/heart-full.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+    </div>
+
+    <!-- Step 3: brunch -->
+    <div class="timeline left">
+      <div class="card">
+        <div class="card-body p-4 text-center">
+          <img src="assets/sun.svg" alt="Soleil" style="width: 70px;" class="mb-3">
+          <h3 class="font-family-cursive mb-4">Le brunch</h3>
+          <p class="mb-4">
+            Le dimanche 05 septembre à 11h<br>
+            Domaine des Bertrands<br>
+            83340 Le Cannet-des-Maures
+          </p>
+          <button type="button" class="more-info-btn btn btn-outline-light" (click)="openModal(moreInfoBrunch)">
+            <fa-icon [icon]="moreInfoIcon" class="more-info-icon mr-2"></fa-icon>
+            Plus d'infos
+          </button>
+        </div>
+      </div>
+      <img src="assets/heart-full.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+    </div>
+
+  </div>
 </div>
+
+<!-- More info modal - Step 1: mairie -->
+<ng-template #moreInfoMairie let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">La mairie</h4>
+    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-program-detail-mairie></app-program-detail-mairie>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  </div>
+</ng-template>
+
+<!-- More info modal - Step 2: wedding party -->
+<ng-template #moreInfoParty let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">La Wedding Party</h4>
+    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-program-detail-party></app-program-detail-party>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  </div>
+</ng-template>
+
+<!-- More info modal - Step 3: brunch -->
+<ng-template #moreInfoBrunch let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Le brunch</h4>
+    <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-program-detail-brunch></app-program-detail-brunch>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Fermer</button>
+  </div>
+</ng-template>

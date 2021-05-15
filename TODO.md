@@ -7,7 +7,9 @@
 - make subheader "semi-sticky" (appear on scroll-up), or sticky otherwise
 - handle responsiveness, alignment, positioning in a better way (a bit messy today + broken on small mobiles)
 - add decorations (hearts?) between nav links
-- in small view, since the nav is collapsed on click, it scrolls too far
+- fix scroll to anchor issues:
+  - in all views, the subheader hides the section title, since it is fixed
+  - in small view, since the nav is collapsed on click, it scrolls too far
 
 ## Carousel
 
@@ -22,10 +24,7 @@
 
 ## Program
 
-- add a button that opens a popin for detailed content for each card
-- design a vertical timeline (see http://onelove.catanisthemes.com/home-onepage-02/)
-- add an icon on each card
-- [bonus] each popin has a printable version
+- each popin has a printable version
 - content:
   - card 1: mairie + plan + où se garer
   - card 2: how to go to villa. fête + plan + detailed planning
@@ -48,6 +47,8 @@
 ## Bonus image
 
 - add picture frame to image
+- [bonus] add other pictures using this:
+  https://www.shutterstock.com/image-vector/set-vintage-photo-frame-adhesive-tape-560559439?id=560559439&irclickid=RSDRXVTnRxyLUbHwUx0Mo3EtUkB2EwQXgw0j1M0&irgwc=1&utm_medium=Affiliate&utm_campaign=Free%20SVG&utm_source=2022575&utm_term=&c3ch=Affiliate&c3nid=IR-2022575 
 
 ## Footer
 
@@ -58,6 +59,11 @@
   - https://www.julie-bast.fr/
 
 - Adapt responsiveness when needed
+
+## Performance
+
+- test on slow device + slow connection
+- compress bonus gif image if possible
 
 ------------------------------------------------------------------------------
 

@@ -12,16 +12,20 @@ import { IntroComponent } from './intro/intro.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CouplePresComponent } from './couple-pres/couple-pres.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
-import { ProgramComponent } from './program/program.component';
 import { AccommodationComponent } from './accommodation/accommodation.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { MoneyPotComponent } from './money-pot/money-pot.component';
-import { NgbCarouselModule, NgbCollapseModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbCollapseModule, NgbModalModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { BonusComponent } from './bonus/bonus.component';
+import { ProgramComponent } from './program/program.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProgramDetailMairieComponent } from './program/program-detail-mairie/program-detail-mairie.component';
+import { ProgramDetailPartyComponent } from './program/program-detail-party/program-detail-party.component';
+import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/program-detail-brunch.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +42,16 @@ import { BonusComponent } from './bonus/bonus.component';
     AccommodationComponent,
     RsvpFormComponent,
     MoneyPotComponent,
-    BonusComponent
+    BonusComponent,
+    ProgramDetailMairieComponent,
+    ProgramDetailPartyComponent,
+    ProgramDetailBrunchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
@@ -51,7 +59,8 @@ import { BonusComponent } from './bonus/bonus.component';
     MatOptionModule,
     NgbCarouselModule,
     NgbNavModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    NgbModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
