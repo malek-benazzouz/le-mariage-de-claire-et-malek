@@ -4,10 +4,10 @@
 
 ## Header
 
-- add links to 4 sections: program, accommodation, RSVP, Money pot
-- ideally, make it "semi-sticky" (appear on scroll-up), or sticky otherwise
-- on mobile view, should be an expandable menu
-- smooth scroll when going to a section
+- make subheader "semi-sticky" (appear on scroll-up), or sticky otherwise
+- handle responsiveness, alignment, positioning in a better way (a bit messy today + broken on small mobiles)
+- add decorations (hearts?) between nav links
+- in small view, since the nav is collapsed on click, it scrolls too far
 
 ## Carousel
 
