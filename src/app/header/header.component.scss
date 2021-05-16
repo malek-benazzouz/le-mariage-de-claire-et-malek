@@ -4,6 +4,10 @@
   background-color: $primary;
   color: $tertiary;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 380px) {
+    justify-content: space-between !important;
+  }
 }
 
 #subheader {
@@ -56,6 +60,10 @@
   @include media-breakpoint-down(xxs) {
     padding-right: 15px;
   }
+
+  @media screen and (max-width: 380px) {
+    padding-right: 10px;
+  }
 }
 
 .title-malek {
@@ -71,6 +79,10 @@
 
   @include media-breakpoint-down(xxs) {
     padding-left: 15px;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding-left: 10px;
   }
 }
 
@@ -88,9 +100,25 @@
 }
 
 .navbar-toggler {
-  font-size: 15px;
-  margin-top: 2px;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  font-size: 19px;
   padding: 4px 8px;
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  color: $primary !important;
+  opacity: 0.7;
+
+  @include media-breakpoint-down(xs) {
+    top: 16px;
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    top: 15px;
+    font-size: 15px;
+  }
 }
 
 #collapsible-nav {

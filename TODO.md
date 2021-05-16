@@ -46,6 +46,7 @@
   - https://www.julie-bast.fr/
 
 - Adapt responsiveness when needed (then remove temp debug section in main.component.html)
+  + Set a min-width at body level, of 360px
 
 ## Performance
 
