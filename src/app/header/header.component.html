@@ -13,7 +13,7 @@
   <button class="navbar-toggler text-right" type="button" (click)="isNavCollapsed = !isNavCollapsed">&#9776;</button>
 
   <!-- Collapsible nav - displayed only on sm- -->
-  <div id="small-nav" [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
+  <div id="collapsible-nav" [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
     <app-header-nav size="small" (navLinkSelected)="isNavCollapsed = true"></app-header-nav>
   </div>
 </nav>

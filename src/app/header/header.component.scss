@@ -12,24 +12,79 @@
 
 .title {
   font-size: 2rem;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 1.75rem;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    font-size: 1.5rem;
+  }
 }
 
 .title-part {
   letter-spacing: 12px;
   margin-right: -12px;
+
+  @include media-breakpoint-down(sm) {
+    letter-spacing: 8px;
+    margin-right: -8px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    letter-spacing: 5px;
+    margin-right: -5px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    letter-spacing: 3px;
+    margin-right: -3px;
+  }
 }
 
 .title-claire {
   padding-right: 35px;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 28px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-right: 20px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    padding-right: 15px;
+  }
 }
 
 .title-malek {
   padding-left: 35px;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 28px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-left: 20px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    padding-left: 15px;
+  }
 }
 
 .wedding-rings-icon {
   width: 34px;
   padding-bottom: 5px;
+
+  @include media-breakpoint-down(xs) {
+    width: 28px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    width: 26px;
+  }
 }
 
 .navbar-toggler {
@@ -38,7 +93,7 @@
   padding: 4px 8px;
 }
 
-#small-nav {
+#collapsible-nav {
   @include media-breakpoint-up(md) {
     display: none !important;
   }

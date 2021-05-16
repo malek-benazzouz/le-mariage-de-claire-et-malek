@@ -1,23 +1,25 @@
 <div id="main">
 
-  <div class="m-5"><app-countdown></app-countdown></div>
-  <div class="m-5"><app-carousel></app-carousel></div>
-  <div class="m-5"><app-intro></app-intro></div>
-  <div class="my-5"><app-couple-pres></app-couple-pres></div>
-  <div class="m-5"><app-program></app-program></div>
-  <div class="m-5"><app-accommodation></app-accommodation></div>
-  <div class="my-5"><app-rsvp-form></app-rsvp-form></div>
-  <div class="m-5"><app-money-pot></app-money-pot></div>
-  <div class="m-5"><app-bonus></app-bonus></div>
+  <div class="responsive-margin"><app-countdown></app-countdown></div>
+  <div class="responsive-margin"><app-carousel></app-carousel></div>
+  <div class="responsive-margin"><app-intro></app-intro></div>
+  <div class=""><app-couple-pres></app-couple-pres></div>
+  <div class="responsive-margin mx-0"><app-program></app-program></div>
+  <div class="responsive-margin"><app-accommodation></app-accommodation></div>
+  <div class=""><app-rsvp-form></app-rsvp-form></div>
+  <div class="responsive-margin"><app-money-pot></app-money-pot></div>
+  <div class="responsive-margin"><app-bonus></app-bonus></div>
 
 </div>
 
 <!-- RESPONSIVE DEBUG AREA -->
 <div *ngIf="true" class="fixed-bottom" style="background: #ce0058; color: white; padding: 10px; text-align: center;">
-  <span class="d-sm-none">                      - XS -            </span>
+  <span class="d-xs-none">                      XXS               </span>
+  <span class="d-none d-xs-block d-sm-none">    - XS -            </span>
   <span class="d-none d-sm-block d-md-none">    -- SM --          </span>
   <span class="d-none d-md-block d-lg-none">    --- MD ---        </span>
   <span class="d-none d-lg-block d-xl-none">    ---- LG ----      </span>
-  <span class="d-none d-xl-block">              ----- XL -----    </span>
+  <span class="d-none d-xl-block d-xxl-none">    ---- XL ----      </span>
+  <span class="d-none d-xxl-block">             ----- XXL -----    </span>
 </div>
 <!-- END RESPONSIVE DEBUG AREA -->

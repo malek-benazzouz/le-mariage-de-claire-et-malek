@@ -1,5 +1,8 @@
 //-- Bootstrap overrides
 
+// Extend Bootstrap breakpoints
+$grid-breakpoints: (xxs: 0, xs: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px);
+
 $primary: #D3DAD0;
 $primary-dark: #8a8e88;
 $secondary: #ce0058;
@@ -45,4 +48,28 @@ body {
   font-weight: 500;
   background-color: $background-color;
   color: $text-color;
+}
+
+.responsive-margin {
+  margin: 3rem 1rem;
+
+  @include media-breakpoint-up(xs) {
+    margin: 3rem 1.5rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin: 3rem 3rem;
+  }
+}
+
+.responsive-padding {
+  padding: 3rem 1rem;
+
+  @include media-breakpoint-up(xs) {
+    padding: 3rem 1.5rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 3rem 3rem;
+  }
 }
