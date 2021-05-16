@@ -38,11 +38,6 @@
   padding: 4px 8px;
 }
 
-.navbar-nav {
-  max-width: 1050px !important;
-  margin: auto;
-}
-
 #small-nav {
   @include media-breakpoint-up(md) {
     display: none !important;
