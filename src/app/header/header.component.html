@@ -1,29 +1,24 @@
 <nav id="header" class="navbar navbar-expand-md navbar-light bg-primary d-flex justify-content-between justify-content-md-center">
+  <!-- Hack to center the page title -->
   <span class="d-md-none"></span>
+
+  <!-- Page title -->
   <span class="title font-family-main d-flex align-items-center">
     <span class="title-part title-claire">CLAIRE</span>
     <img class="wedding-rings-icon" src="assets/wedding-rings.svg">
     <span class="title-part title-malek">MALEK</span>
   </span>
+
+  <!-- Navbar toggle icon - displayed only on sm- -->
   <button class="navbar-toggler text-right" type="button" (click)="isNavCollapsed = !isNavCollapsed">&#9776;</button>
+
+  <!-- Collapsible nav - displayed only on sm- -->
   <div id="small-nav" [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
-    <div class="navbar-nav w-100 d-flex justify-content-around">
-      <a class="nav-link" href="#program-anchor" (click)="isNavCollapsed = true">Programme</a>
-      <a class="nav-link" href="#accommodation-anchor" (click)="isNavCollapsed = true">Hébergement</a>
-      <a class="nav-link" href="#rsvp-form-anchor" (click)="isNavCollapsed = true">RSVP</a>
-      <a class="nav-link" href="#money-pot-anchor" (click)="isNavCollapsed = true">Liste de mariage</a>
-    </div>
+    <app-header-nav size="small" (navLinkSelected)="isNavCollapsed = true"></app-header-nav>
   </div>
 </nav>
 
+<!-- Subheader - displayed only on md+ -->
 <nav id="subheader" class="navbar navbar-expand navbar-light bg-primary d-none d-md-flex sticky-top">
-  <button class="navbar-toggler text-right" type="button" (click)="isNavCollapsed = !isNavCollapsed">&#9776;</button>
-  <div [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
-    <div class="navbar-nav w-100 d-flex justify-content-around">
-      <a class="nav-link" href="#program-anchor" (click)="isNavCollapsed = true">Programme</a>
-      <a class="nav-link" href="#accommodation-anchor" (click)="isNavCollapsed = true">Hébergement</a>
-      <a class="nav-link" href="#rsvp-form-anchor" (click)="isNavCollapsed = true">RSVP</a>
-      <a class="nav-link" href="#money-pot-anchor" (click)="isNavCollapsed = true">Liste de mariage</a>
-    </div>
-  </div>
+  <app-header-nav size="normal" (navLinkSelected)="isNavCollapsed = true"></app-header-nav>
 </nav>

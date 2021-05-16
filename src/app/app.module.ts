@@ -27,12 +27,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProgramDetailMairieComponent } from './program/program-detail-mairie/program-detail-mairie.component';
 import { ProgramDetailPartyComponent } from './program/program-detail-party/program-detail-party.component';
 import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/program-detail-brunch.component';
+import { HeaderNavComponent } from './header/header-nav/header-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     HeaderComponent,
+    HeaderNavComponent,
     FooterComponent,
     CountdownComponent,
     IntroComponent,
@@ -40,13 +42,13 @@ import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/pr
     CouplePresComponent,
     SectionTitleComponent,
     ProgramComponent,
+    ProgramDetailMairieComponent,
+    ProgramDetailPartyComponent,
+    ProgramDetailBrunchComponent,
     AccommodationComponent,
     RsvpFormComponent,
     MoneyPotComponent,
-    BonusComponent,
-    ProgramDetailMairieComponent,
-    ProgramDetailPartyComponent,
-    ProgramDetailBrunchComponent
+    BonusComponent
   ],
   imports: [
     BrowserModule,
