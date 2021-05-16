@@ -5,6 +5,7 @@
 - make subheader "semi-sticky" (appear on scroll-up), or sticky otherwise
 - handle responsiveness, alignment, positioning in a better way (a bit messy today + broken on small mobiles)
 - add decorations (hearts?) between nav links
+- in small view, center the title better
 
 ## Carousel
 

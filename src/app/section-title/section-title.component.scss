@@ -1,0 +1,27 @@
+@import "src/styles";
+
+@include media-breakpoint-down(sm) {
+  .title {
+    font-size: 45px !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .title {
+    font-size: 40px !important;
+  }
+}
+
+@include media-breakpoint-down(xxs) {
+  .title {
+    font-size: 35px !important;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .extra-text {
+    font-size: 18px;
+  }
+}
