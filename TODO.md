@@ -44,7 +44,7 @@
   - http://preview.themeforest.net/item/onelove-the-elegant-clean-multipurpose-wedding-wordpress-theme/full_screen_preview/20235980
   - https://www.julie-bast.fr/
 
-- Adapt responsiveness when needed
+- Adapt responsiveness when needed (then remove temp debug section in main.component.html)
 
 ## Performance
 
