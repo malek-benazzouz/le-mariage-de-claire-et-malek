@@ -16,7 +16,6 @@
 ## Couple pres
 
 - add background
-- add animation (2 cards getting closer while scrolling)
 
 ## Program
 
@@ -50,8 +49,9 @@
 
 ## Performance
 
+- add a pre-loading page while fetching images
 - test on slow device + slow connection
-- compress bonus gif image if possible
+- compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
 
 ------------------------------------------------------------------------------
 
