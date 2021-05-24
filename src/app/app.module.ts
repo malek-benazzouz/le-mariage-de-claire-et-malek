@@ -28,6 +28,7 @@ import { ProgramDetailMairieComponent } from './program/program-detail-mairie/pr
 import { ProgramDetailPartyComponent } from './program/program-detail-party/program-detail-party.component';
 import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/program-detail-brunch.component';
 import { HeaderNavComponent } from './header/header-nav/header-nav.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { HeaderNavComponent } from './header/header-nav/header-nav.component';
     NgbCarouselModule,
     NgbNavModule,
     NgbCollapseModule,
-    NgbModalModule
+    NgbModalModule,
+    ScrollingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
