@@ -1,10 +1,16 @@
 @import "src/styles";
 
-#money-pot-link {
-  color: $tertiary;
+.rib-wrapper {
+  border: 1px solid $primary;
 }
 
-.money-icon {
+.rib-label {
   color: $secondary;
-  opacity: 0.7;
+}
+
+.copy-icon {
+  color: $secondary;
+  cursor: pointer;
+  font-size: 18px;
+  padding-top: 5px;
 }

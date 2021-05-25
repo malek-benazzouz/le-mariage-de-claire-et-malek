@@ -15,7 +15,14 @@ import { SectionTitleComponent } from './section-title/section-title.component';
 import { AccommodationComponent } from './accommodation/accommodation.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { MoneyPotComponent } from './money-pot/money-pot.component';
-import { NgbCarouselModule, NgbCollapseModule, NgbModalModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbAlertModule,
+  NgbCarouselModule,
+  NgbCollapseModule,
+  NgbModalModule,
+  NgbNavModule,
+  NgbToastModule, NgbTooltipModule
+} from '@ng-bootstrap/ng-bootstrap';
 import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -29,6 +36,7 @@ import { ProgramDetailPartyComponent } from './program/program-detail-party/prog
 import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/program-detail-brunch.component';
 import { HeaderNavComponent } from './header/header-nav/header-nav.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -67,6 +75,10 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     NgbCollapseModule,
     NgbModalModule,
     ScrollingModule,
+    ClipboardModule,
+    NgbAlertModule,
+    NgbToastModule,
+    NgbTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

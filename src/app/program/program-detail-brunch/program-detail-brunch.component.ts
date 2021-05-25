@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faHotdog, faInfoCircle, faSun } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-program-detail-brunch',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./program-detail-brunch.component.scss']
 })
 export class ProgramDetailBrunchComponent implements OnInit {
+
+  infoIcon = faInfoCircle;
+  relaxIcon = faHotdog;
+  chillIcon = faSun;
 
   constructor() { }
 
