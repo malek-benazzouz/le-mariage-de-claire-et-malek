@@ -7,6 +7,10 @@
 - add decorations (hearts?) between nav links
 - in small view, center the title better
 
+## Section titles
+
+- add decoration?
+
 ## Carousel
 
 ## Countdown
@@ -15,7 +19,7 @@
 
 ## Couple pres
 
-- add background
+- add background image (e.g. olive motif)?
 
 ## Program
 
@@ -25,12 +29,10 @@
 
 ## RSVP
 
+- add background image (e.g. olive motif)?
 - design form content - info to include: présent ? +1 ? photo étant petit. COVID recommendations
 
 ## Money pot
-
-- beautify link to money pot
-- create money pot and add link to it
 
 ## Bonus image
 
