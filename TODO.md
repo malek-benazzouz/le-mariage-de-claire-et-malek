@@ -19,6 +19,8 @@
 
 ## Program
 
+- add useful contact numbers
+
 ## Accommodation
 
 ## RSVP

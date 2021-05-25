@@ -1,0 +1,10 @@
+@import "src/styles";
+
+.itinerary-link {
+  white-space: nowrap;
+}
+
+.cocktail-icon, .baby-icon, .suit-icon, .smile-icon {
+  color: $secondary;
+  opacity: 0.8;
+}

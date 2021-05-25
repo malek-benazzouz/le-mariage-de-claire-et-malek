@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faGift } from '@fortawesome/free-solid-svg-icons';
+import { faCopy } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-money-pot',
@@ -8,7 +9,10 @@ import { faGift } from '@fortawesome/free-solid-svg-icons';
 })
 export class MoneyPotComponent implements OnInit {
 
-  moneyIcon = faGift;
+  copyIcon = faCopy;
+
+  ibanCopied = false;
+  bicCopied = false;
 
   constructor() { }
 

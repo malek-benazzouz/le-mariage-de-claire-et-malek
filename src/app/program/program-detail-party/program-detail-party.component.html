@@ -1,13 +1,49 @@
-<img class="w-100 mb-3"
-     src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17915bd0e52%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17915bd0e52%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
-<p class="d-none d-print-block text-center m-4">
+<!-- Image -->
+<div class="d-flex justify-content-center">
+  <img class="program-image w-100 mb-3" src="assets/picture-bertrands-entrance.jpg">
+</div>
+
+<!-- Address - displayed for print only -->
+<p class="d-none d-print-block text-center mt-3 mb-5">
   Le samedi 04 septembre à 18h<br>
   Domaine des Bertrands<br>
+  Route de La Garde-Freinet<br>
   83340 Le Cannet-des-Maures
 </p>
-<h5 class="font-family-cursive h2">Informations pratiques</h5>
+
+<h5 class="mt-2 mb-4 font-family-cursive h2">Informations pratiques</h5>
+
 <p>
-  Infos sur la fiesta<br>
-  Autres infos<br>
-  Encore d'autres infos<br>
+  <fa-icon [icon]="cocktailIcon" class="cocktail-icon mr-2"></fa-icon>
+  Un rafraîchissement d’accueil vous attendra au Château des Bertrands <strong>dès 18h</strong> pour débuter les festivités&nbsp;!
 </p>
+
+<p>
+  <fa-icon [icon]="babyIcon" class="baby-icon mr-2"></fa-icon>
+  Une baby-sitter sera présente au domaine de 18h30 à 2h30 pour ravir les plus petits.
+</p>
+
+<p>
+  <fa-icon [icon]="suitIcon" class="suit-icon mr-2"></fa-icon>
+  N’hésitez pas à vous munir de votre plus belle tenue de soirée.
+</p>
+
+<p>
+  <fa-icon [icon]="smileIcon" class="smile-icon mr-2"></fa-icon>
+  Nous avons hâte de vous y retrouver&nbsp;!
+</p>
+
+<h5 class="mt-4 pt-3 mb-3">Comment y accéder&nbsp;?</h5>
+
+<div class="d-flex justify-content-between m-2">
+  <div>
+    Prévoyez environ <strong>1h de route</strong> entre la mairie d’Antibes et le Domaine des Bertrands.
+    Une fois sur place, suivez les panneaux indiquant "Château des Bertrands".
+  </div>
+  <div class="d-print-none">
+    <a class="itinerary-link btn btn-outline-secondary" [href]="itineraryLinkBertrands" target="_blank">
+      <fa-icon [icon]="itineraryIcon" class="itinerary-icon mr-2"></fa-icon>
+      Itinéraire
+    </a>
+  </div>
+</div>
