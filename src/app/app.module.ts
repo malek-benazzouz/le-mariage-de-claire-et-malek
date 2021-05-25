@@ -21,7 +21,8 @@ import {
   NgbCollapseModule,
   NgbModalModule,
   NgbNavModule,
-  NgbToastModule, NgbTooltipModule
+  NgbToastModule,
+  NgbTooltipModule
 } from '@ng-bootstrap/ng-bootstrap';
 import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -65,6 +66,8 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     BrowserAnimationsModule,
     FontAwesomeModule,
     NgxPrintModule,
+    ScrollingModule,
+    ClipboardModule,
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
@@ -74,11 +77,9 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     NgbNavModule,
     NgbCollapseModule,
     NgbModalModule,
-    ScrollingModule,
-    ClipboardModule,
     NgbAlertModule,
     NgbToastModule,
-    NgbTooltipModule,
+    NgbTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
