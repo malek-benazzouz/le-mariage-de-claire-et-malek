@@ -1,0 +1,23 @@
+@import "src/styles";
+
+#confirmations-wrapper, #login-info {
+  background-color: $almost-white;
+}
+
+#confirmations-summary-card {
+  width: 90%;
+}
+
+mat-form-field {
+  width: 300px;
+}
+
+:host::ng-deep #header {
+  background-color: #ece1e3 !important;
+  box-shadow: 0 0 10px 0 $gray-dark;
+}
+
+:host::ng-deep #footer {
+  background-color: #ece1e3 !important;
+  margin-top: 0 !important;
+}

@@ -7,15 +7,15 @@
   </span>
 
   <!-- Navbar toggle icon - displayed only on sm- -->
-  <button class="navbar-toggler text-right" type="button" (click)="isNavCollapsed = !isNavCollapsed">&#9776;</button>
+  <button *ngIf="hasNavigation" class="navbar-toggler text-right" type="button" (click)="isNavCollapsed = !isNavCollapsed">&#9776;</button>
 
   <!-- Collapsible nav - displayed only on sm- -->
-  <div id="collapsible-nav" [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
+  <div *ngIf="hasNavigation" id="collapsible-nav" [ngbCollapse]="isNavCollapsed" class="collapse navbar-collapse">
     <app-header-nav size="small" (navLinkSelected)="isNavCollapsed = true"></app-header-nav>
   </div>
 </nav>
 
 <!-- Subheader - displayed only on md+ -->
-<nav id="subheader" class="navbar navbar-expand navbar-light bg-primary d-none d-md-flex sticky-top">
+<nav *ngIf="hasNavigation" id="subheader" class="navbar navbar-expand navbar-light bg-primary d-none d-md-flex sticky-top">
   <app-header-nav size="normal" (navLinkSelected)="isNavCollapsed = true"></app-header-nav>
 </nav>
