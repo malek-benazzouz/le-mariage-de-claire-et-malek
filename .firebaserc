@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mariage-cm": {
+      "hosting": {
+        "mariagecm-ui": [
+          "mariage-cm"
+        ]
+      }
+    }
+  }
+}
