@@ -2,14 +2,13 @@
 
 ## Header
 
-- make subheader "semi-sticky" (appear on scroll-up), or sticky otherwise
-- handle responsiveness, alignment, positioning in a better way (a bit messy today + broken on small mobiles)
 - add decorations (hearts?) between nav links
-- in small view, center the title better
+- in mobile view, make header "semi-sticky" (appear on scroll-up)
+- in mobile view, when nav is expanded, replace hamburger icon by x icon
 
 ## Section titles
 
-- add decoration?
+- add decoration around section titles
 
 ## Carousel
 
@@ -19,6 +18,7 @@
 
 ## Couple pres
 
+- content: update couples quotes
 - add background image (e.g. olive motif)?
 
 ## Program
@@ -29,8 +29,9 @@
 
 ## RSVP
 
+- content: add rsvp content
+- processing: setup backend and link it to form
 - add background image (e.g. olive motif)?
-- design form content - info to include: présent ? +1 ? photo étant petit. COVID recommendations
 
 ## Money pot
 
@@ -42,20 +43,28 @@
 
 ## Footer
 
+- content: find and add footer quote
+
+# Admin page
+
 ## Design / Style
 
 - add animations + customize style. Ideas:
   - http://preview.themeforest.net/item/onelove-the-elegant-clean-multipurpose-wedding-wordpress-theme/full_screen_preview/20235980
   - https://www.julie-bast.fr/
 
-- Adapt responsiveness when needed (then remove temp debug section in main.component.html)
-  + Set a min-width at body level, of 360px
+- Make sure responsiveness is OK everywhere
 
 ## Performance
 
+- compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
+- download google fonts and add them to repo instead of fetching them from google?
 - add a pre-loading page while fetching images
 - test on slow device + slow connection
-- compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
+
+# Production
+
+- Fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
 
 ------------------------------------------------------------------------------
 
