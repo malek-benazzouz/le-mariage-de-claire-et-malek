@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBrsiu5SbssDFb72hP-L4NotXBkwL8oUIY',
+    authDomain: 'mariagecm-backend.firebaseapp.com',
+    projectId: 'mariagecm-backend',
+    storageBucket: 'mariagecm-backend.appspot.com',
+    messagingSenderId: '945382725639',
+    appId: '1:945382725639:web:492421042cf59f52c4f2a2',
+    measurementId: 'G-LN1E4XXBRG'
+  }
 };
 
 /*

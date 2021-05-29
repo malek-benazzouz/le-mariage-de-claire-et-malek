@@ -38,6 +38,14 @@ import { ProgramDetailBrunchComponent } from './program/program-detail-brunch/pr
 import { HeaderNavComponent } from './header/header-nav/header-nav.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatRadioModule } from '@angular/material/radio';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { AdminComponent } from './admin/admin.component';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -58,12 +66,16 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     AccommodationComponent,
     RsvpFormComponent,
     MoneyPotComponent,
-    BonusComponent
+    BonusComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
     FontAwesomeModule,
     NgxPrintModule,
     ScrollingModule,
@@ -73,13 +85,16 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     MatInputModule,
     MatSelectModule,
     MatOptionModule,
+    MatRadioModule,
     NgbCarouselModule,
     NgbNavModule,
     NgbCollapseModule,
     NgbModalModule,
     NgbAlertModule,
     NgbToastModule,
-    NgbTooltipModule
+    NgbTooltipModule,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
