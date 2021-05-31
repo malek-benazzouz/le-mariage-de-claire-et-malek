@@ -6,5 +6,71 @@
 }
 
 #rsvp-form-content {
-  max-width: 80%;
+  width: 90%;
+}
+
+.name-field {
+  width: 100%;
+  margin-bottom: 5px;
+
+  @include media-breakpoint-up(sm) {
+    width: calc(50% - 5px);
+    &:first-child {
+      margin-right: 5px;
+    }
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+}
+
+.name-field-full {
+  width: 100%;
+}
+
+.required-marker {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+mat-radio-button, mat-checkbox {
+  @extend .font-family-main;
+  white-space: normal;
+}
+
+:host::ng-deep .mat-checkbox-inner-container {
+  margin: 0 8px 0 0;
+  top: 1px;
+}
+
+:host::ng-deep .mat-radio-label-content {
+  white-space: normal;
+  font-size: 16px;
+}
+
+:host::ng-deep .mat-checkbox-label {
+  white-space: normal;
+}
+
+textarea {
+  height: 60px;
+}
+
+.wink-icon, .smile-icon, .sad-icon {
+  font-size: 24px;
+}
+
+.info-icon {
+  cursor: help;
+}
+
+.young-picture {
+  width: 95%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.heart-between-pictures {
+  margin: 0 -12px;
 }

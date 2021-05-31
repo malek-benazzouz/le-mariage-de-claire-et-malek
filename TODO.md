@@ -29,8 +29,7 @@
 
 ## RSVP
 
-- content: add rsvp content
-- processing: setup backend and link it to form
+- update rsvpService model and admin page summary
 - add background image (e.g. olive motif)?
 
 ## Money pot
