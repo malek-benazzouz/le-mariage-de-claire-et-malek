@@ -45,7 +45,8 @@ import { environment } from '../environments/environment';
 import { AdminComponent } from './admin/admin.component';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -85,6 +86,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatOptionModule,
+    MatCheckboxModule,
     MatRadioModule,
     NgbCarouselModule,
     NgbNavModule,
@@ -94,7 +96,8 @@ import { FormsModule } from '@angular/forms';
     NgbToastModule,
     NgbTooltipModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
