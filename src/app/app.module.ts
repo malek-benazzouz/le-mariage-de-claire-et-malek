@@ -47,6 +47,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RsvpSummaryComponent } from './rsvp-summary/rsvp-summary.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     RsvpFormComponent,
     MoneyPotComponent,
     BonusComponent,
-    AdminComponent
+    AdminComponent,
+    RsvpSummaryComponent
   ],
   imports: [
     BrowserModule,

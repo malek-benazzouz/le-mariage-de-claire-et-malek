@@ -12,13 +12,13 @@
         <p>
           <mat-form-field appearance="fill" class="name-field">
             <mat-label>Prénom</mat-label>
-            <input [formControl]="controls.firstName" matInput placeholder="Ex. James" required>
+            <input [formControl]="controls.firstName" matInput placeholder="Ex. James">
             <mat-hint>Surnoms acceptés</mat-hint>
             <mat-error *ngIf="controls.firstName.invalid">Veuillez entrer votre prénom</mat-error>
           </mat-form-field>
           <mat-form-field appearance="fill" class="name-field">
             <mat-label>Nom</mat-label>
-            <input [formControl]="controls.lastName" matInput placeholder="C'est quoi déjà ?" required>
+            <input [formControl]="controls.lastName" matInput placeholder="C'est quoi déjà ?">
             <mat-hint>Le vrai</mat-hint>
             <mat-error *ngIf="controls.lastName.invalid">Veuillez entrer votre nom</mat-error>
           </mat-form-field>
@@ -30,9 +30,8 @@
 
         <!-- Party - Presence -->
         <p>
-          <span class="required-marker">*</span>
           <label>Je serai de la <i>party&nbsp;</i>:</label><br>
-          <mat-radio-group [formControl]="controls.partyPresent" class="mat-form-field-required-marker">
+          <mat-radio-group [formControl]="controls.partyPresent">
             <mat-radio-button value="yes" class="mr-2">Ouiii !</mat-radio-button>
             <mat-radio-button value="no">Non, mais avec regrets (j'ai aqua poney)</mat-radio-button>
             <mat-error *ngIf="formSubmitted && controls.partyPresent.invalid">Veuillez sélectionner une option</mat-error>
@@ -54,13 +53,13 @@
           <p *ngIf="controls.partyPlusOnePresent.value">
             <mat-form-field appearance="fill" class="name-field">
               <mat-label>Prénom de votre conjoint.e</mat-label>
-              <input [formControl]="controls.partyPlusOneFirstName" matInput placeholder="Ex. Johnny" required>
+              <input [formControl]="controls.partyPlusOneFirstName" matInput placeholder="Ex. Johnny">
               <mat-hint>Surnoms acceptés</mat-hint>
               <mat-error *ngIf="controls.partyPlusOneFirstName.invalid">Veuillez entrer le prénom de votre conjoint.e</mat-error>
             </mat-form-field>
             <mat-form-field appearance="fill" class="name-field">
               <mat-label>Nom de votre conjoint.e</mat-label>
-              <input [formControl]="controls.partyPlusOneLastName" matInput placeholder="C'est quoi déjà ?" required>
+              <input [formControl]="controls.partyPlusOneLastName" matInput placeholder="C'est quoi déjà ?">
               <mat-hint>Si vous le connaissez</mat-hint>
               <mat-error *ngIf="controls.partyPlusOneLastName.invalid">Veuillez entrer le nom de votre conjoint.e</mat-error>
             </mat-form-field>
@@ -77,7 +76,7 @@
           <p *ngIf="controls.partyChildrenPresent.value">
             <mat-form-field appearance="fill" class="name-field-full">
               <mat-label>Prénom et âge du.des enfant.s</mat-label>
-              <input [formControl]="controls.partyChildrenDetails" matInput placeholder="Ex. Riri (5 ans), Fifi (2 ans)" required>
+              <input [formControl]="controls.partyChildrenDetails" matInput placeholder="Ex. Riri (5 ans), Fifi (2 ans)">
               <mat-hint>Assurez-vous de ne pas en oublier</mat-hint>
               <mat-error *ngIf="controls.partyChildrenDetails.invalid">Veuillez entrer le prénom et âge de votre.vos enfant.s</mat-error>
             </mat-form-field>
@@ -98,7 +97,6 @@
 
           <!-- Brunch - Presence -->
           <p>
-            <span class="required-marker">*</span>
             <label>Je participerai au brunch&nbsp;:</label><br>
             <mat-radio-group [formControl]="controls.brunchPresent">
               <mat-radio-button value="yes" class="mr-2">Oui, car je suis un.e gourmand.e</mat-radio-button>
@@ -121,13 +119,13 @@
             <p *ngIf="controls.brunchPlusOnePresent.value">
               <mat-form-field appearance="fill" class="name-field">
                 <mat-label>Prénom de votre conjoint.e</mat-label>
-                <input [formControl]="controls.brunchPlusOneFirstName" matInput placeholder="Ex. Momo" required>
+                <input [formControl]="controls.brunchPlusOneFirstName" matInput placeholder="Ex. Momo">
                 <mat-hint>Surnoms acceptés</mat-hint>
                 <mat-error *ngIf="controls.brunchPlusOneFirstName.invalid">Veuillez entrer le prénom de votre conjoint.e</mat-error>
               </mat-form-field>
               <mat-form-field appearance="fill" class="name-field">
                 <mat-label>Nom de votre conjoint.e</mat-label>
-                <input [formControl]="controls.brunchPlusOneLastName" matInput placeholder="C'est quoi déjà ?" required>
+                <input [formControl]="controls.brunchPlusOneLastName" matInput placeholder="C'est quoi déjà ?">
                 <mat-hint>Si vous le connaissez</mat-hint>
                 <mat-error *ngIf="controls.brunchPlusOneLastName.invalid">Veuillez entrer le nom de votre conjoint.e</mat-error>
               </mat-form-field>
@@ -144,7 +142,7 @@
             <p *ngIf="controls.brunchChildrenPresent.value">
               <mat-form-field appearance="fill" class="name-field-full">
                 <mat-label>Prénom et âge du.des enfant.s</mat-label>
-                <input [formControl]="controls.brunchChildrenDetails" matInput placeholder="Ex. Riri (5 ans), Fifi (2 ans)" required>
+                <input [formControl]="controls.brunchChildrenDetails" matInput placeholder="Ex. Riri (5 ans), Fifi (2 ans)">
                 <mat-hint>Assurez-vous de ne pas en oublier</mat-hint>
                 <mat-error *ngIf="controls.brunchChildrenDetails.invalid">Veuillez entrer le prénom et âge de votre.vos enfant.s</mat-error>
               </mat-form-field>
@@ -173,9 +171,9 @@
 
           <p>
             <mat-checkbox [formControl]="controls.acceptYoungPicConditions">
-              <span class="required-marker">*</span>Je m’engage à envoyer une photo de ma p’tite tête,
+              Je m’engage à envoyer une photo de ma p’tite tête,
               celle de mon.ma conjoint.e, et de mon.mes enfant.s dont j’ai confirmé la présence
-              à l’adresse email ***REMOVED*** avant le 20/06/21.
+              à l’adresse email ***REMOVED*** avant le 30 juin 2021.
             </mat-checkbox>
             <mat-error *ngIf="formSubmitted && controls.acceptYoungPicConditions.invalid">
               Vous devez cocher cette case pour continuer
@@ -193,7 +191,8 @@
             Tout comme vous, nous aurions préféré ne pas avoir à aborder ce dernier sujet,
             mais afin de festoyer au mieux et de protéger petits et grands,
             chaque convive devra être vacciné ou avoir effectué un test PCR/antigénique de moins de 72h pour participer aux festivités.
-            Nous vous invitons à nous envoyer votre attestation dès que vous l’aurez en votre possession.
+            Nous vous invitons à nous envoyer votre attestation dès que vous l’aurez en votre possession, à l’adresse email
+            ***REMOVED***.
           </p>
           <p>
             Merci à tous pour votre compréhension, nous avons hâte de partager ces moments avec vous&nbsp;!
@@ -204,11 +203,10 @@
         <hr>
         <h2 class="font-family-cursive my-4 text-center">
           Laissez-nous un message de votre choix
-          <fa-icon [icon]="winkIcon" class="wink-icon ml-2"></fa-icon>
         </h2>
         <p class="small">
           Exemples&nbsp;: allergies, commentaires, précisions, «&nbsp;je plante ma tente dans le jardin du Domaine&nbsp;»,
-          déroulement de votre dernier date tinder, etc.
+          déroulement de votre dernier date Tinder, etc.
         </p>
         <mat-form-field appearance="fill" class="w-100">
           <mat-label>Votre message</mat-label>
@@ -221,7 +219,7 @@
           <hr>
           <p>
             <mat-checkbox [formControl]="controls.acceptEventConditions">
-              <span class="required-marker">*</span>En cochant cette case, j’accepte les termes et conditions de cet évènement :
+              En cochant cette case, j’accepte les termes et conditions de cet évènement :
               joie et bonne humeur obligatoire, fun et amusement de rigueur, jogging et marcel prohibés, fête jusqu’au bout
               de la nuit pour les plus motivés etc.
             </mat-checkbox>
@@ -231,7 +229,7 @@
           </p>
         </div>
 
-        <h2 class="font-family-cursive my-4 text-center">Réponse souhaitée <strong>avant le 20 juin 2021</strong></h2>
+        <h2 class="font-family-cursive my-4 text-center">Réponse souhaitée <strong>avant le 30 juin 2021</strong></h2>
 
         <!-- Submit button -->
         <div class="text-center">
@@ -239,9 +237,11 @@
             Valider
           </button>
         </div>
-        <mat-error class="mt-2 text-center" *ngIf="formSubmitted && rsvpForm.invalid">
+        <ngb-alert type="danger" class="mt-4 mb-0 d-flex justify-content-center" [dismissible]="false"
+                   *ngIf="formSubmitted && rsvpForm.invalid">
+          <fa-icon [icon]="errorIcon" class="error-icon mr-2"></fa-icon>
           Certains champs ci-dessus sont invalides, veuillez les corriger avant de continuer.
-        </mat-error>
+        </ngb-alert>
 
       </form>
 
@@ -273,11 +273,11 @@
     </div>
     <div class="modal-body">
       <p>Veuillez confirmer les informations suivantes, puis confirmer ou corriger votre réponse&nbsp;:</p>
-      <pre>Form value: {{ rsvpForm.value | json }}</pre>
+      <app-rsvp-summary [response]="rsvpForm.value"></app-rsvp-summary>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-secondary" (click)="submitForm()">Confirmer</button>
-      <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Corriger les informations</button>
+      <button type="button" class="btn btn-outline-success" (click)="submitForm()">Confirmer</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Close click')">Corriger les informations</button>
     </div>
   </div>
 </ng-template>
