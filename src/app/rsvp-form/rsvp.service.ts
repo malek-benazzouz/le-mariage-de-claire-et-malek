@@ -5,9 +5,27 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export interface RsvpResponse {
+  // Form data
   firstName: string;
   lastName: string;
-  message?: string;
+  partyPresent: 'yes' | 'no';
+  partyPlusOnePresent: boolean;
+  partyPlusOneFirstName: string;
+  partyPlusOneLastName: string;
+  partyChildrenPresent: boolean;
+  partyChildrenDetails: string;
+  brunchSpecificity: boolean;
+  brunchPresent: 'yes' | 'no';
+  brunchPlusOnePresent: boolean;
+  brunchPlusOneFirstName: string;
+  brunchPlusOneLastName: string;
+  brunchChildrenPresent: boolean;
+  brunchChildrenDetails: string;
+  acceptYoungPicConditions: boolean;
+  acceptEventConditions: boolean;
+  message: string;
+  // Extra data
+  responseDate: { timestamp: number, formatted: string };
 }
 
 @Injectable({ providedIn: 'root' })
@@ -36,7 +54,10 @@ export class RsvpService {
   }
 
   public getAllResponses(): Observable<RsvpResponse[]> {
-    return this.store.collection<RsvpResponse>('rsvp-responses').valueChanges();
+    return this.store.collection<RsvpResponse>(
+      'rsvp-responses',
+      ref => ref.orderBy('responseDate.timestamp')
+    ).valueChanges();
   }
 
 }

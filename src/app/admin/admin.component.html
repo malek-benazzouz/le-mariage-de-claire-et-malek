@@ -40,25 +40,7 @@
       <div *ngIf="(isAuthenticated$ | async) && (rsvpResponses$ | async)">
         <div *ngFor="let response of rsvpResponses$ | async">
           <hr>
-
-          <!-- First name -->
-          <div class="row">
-            <span class="col-4 col-sm-3 col-md-2"><strong>Prénom</strong></span>
-            <span class="col">{{ response.firstName }}</span>
-          </div>
-
-          <!-- Last name -->
-          <div class="row">
-            <span class="col-4 col-sm-3 col-md-2"><strong>Nom</strong></span>
-            <span class="col">{{ response.lastName }}</span>
-          </div>
-
-          <!-- Message -->
-          <div class="row" *ngIf="response.message">
-            <span class="col-4 col-sm-3 col-md-2"><strong>Message</strong></span>
-            <span class="col">{{ response.message }}</span>
-          </div>
-
+          <app-rsvp-summary [response]="response" [isAdmin]="true"></app-rsvp-summary>
         </div>
       </div>
 

@@ -1,0 +1,81 @@
+<!-- Name -->
+<div class="row d-flex align-items-baseline my-2 my-md-0">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Mme/M.</span>
+  <span class="col text-center text-md-left pl-md-1 value"><strong>{{ response.firstName }} {{ response.lastName }}</strong></span>
+</div>
+
+<!-- Party - present -->
+<div class="row d-flex align-items-baseline my-2 my-md-0">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Mairie et soirée</span>
+  <span class="col text-center text-md-left pl-md-1 value">{{ response.partyPresent === 'yes' ? 'Présent.e' : 'Absent.e' }}</span>
+</div>
+
+<!-- Party - plus one -->
+<div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.partyPresent === 'yes' && response.partyPlusOnePresent">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec sa moitié</span>
+  <span class="col text-center text-md-left pl-md-1 value">{{ response.partyPlusOneFirstName }} {{ response.partyPlusOneLastName }}</span>
+</div>
+
+<!-- Party - children -->
+<div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.partyPresent === 'yes' && response.partyChildrenPresent">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son.ses bout'chou</span>
+  <span class="col text-center text-md-left pl-md-1 value">{{ response.partyChildrenDetails }}</span>
+</div>
+
+<!-- Brunch - specificity -->
+<div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="!response.brunchSpecificity">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Brunch</span>
+  <span class="col text-center text-md-left pl-md-1 value">Idem</span>
+</div>
+
+<div *ngIf="response.brunchSpecificity">
+
+  <!-- Brunch - present -->
+  <div class="row d-flex align-items-baseline my-2 my-md-0">
+    <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Brunch</span>
+    <span class="col text-center text-md-left pl-md-1 value">{{ response.brunchPresent === 'yes' ? 'Présent.e' : 'Absent.e' }}</span>
+  </div>
+
+  <!-- Brunch - plus one -->
+  <div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.brunchPresent === 'yes' && response.brunchPlusOnePresent">
+    <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec sa moitié</span>
+    <span
+      class="col text-center text-md-left pl-md-1 value">{{ response.brunchPlusOneFirstName }} {{ response.brunchPlusOneLastName }}</span>
+  </div>
+
+  <!-- Brunch - children -->
+  <div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.brunchPresent === 'yes' && response.brunchChildrenPresent">
+    <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son.ses bout'chou</span>
+    <span class="col text-center text-md-left pl-md-1 value">{{ response.brunchChildrenDetails }}</span>
+  </div>
+
+</div>
+
+<!-- Message -->
+<div class="row d-flex align-items-baseline my-2" *ngIf="response.message">
+  <span class="col-12 text-center label">Message aux mariés</span>
+  <span class="col-12 text-center value">{{ response.message }}</span>
+</div>
+
+<!-- Acknowledgement of young picture conditions -->
+<div class="row d-flex align-items-baseline my-2" *ngIf="!isAdmin && (response.partyPresent === 'yes' || response.brunchPresent === 'yes')">
+  <span class="col-12 text-center label">Je m’engage à&nbsp;:</span>
+  <span class="col-12 text-center value">
+    Envoyer une photo de ma p’tite tête à l’adresse email ***REMOVED*** avant le 30 juin
+  </span>
+</div>
+
+<!-- Acknowledgement of COVID conditions -->
+<div class="row d-flex align-items-baseline my-2" *ngIf="!isAdmin && (response.partyPresent === 'yes' || response.brunchPresent === 'yes')">
+  <span class="col-12 text-center label">Je m’engage aussi à&nbsp;:</span>
+  <span class="col-12 text-center value">
+    Envoyer ou présenter une attestation de vaccination ou un test PCR/antigénique récent
+  </span>
+</div>
+
+<!-- Response date -->
+<div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="isAdmin && response.responseDate">
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Réponse envoyée le&nbsp;:</span>
+  <span class="col text-center text-md-left pl-md-1 value">{{ response.responseDate.formatted }}</span>
+</div>
+

@@ -28,12 +28,6 @@
   width: 100%;
 }
 
-.required-marker {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  margin-right: 6px;
-}
-
 mat-radio-button, mat-checkbox {
   @extend .font-family-main;
   white-space: normal;
@@ -57,12 +51,17 @@ textarea {
   height: 60px;
 }
 
-.wink-icon, .smile-icon, .sad-icon {
+.smile-icon, .sad-icon {
   font-size: 24px;
 }
 
 .info-icon {
   cursor: help;
+}
+
+.error-icon {
+  font-size: 16px;
+  color: $secondary;
 }
 
 .young-picture {

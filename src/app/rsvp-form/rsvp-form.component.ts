@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { faFrown, faSmile, faSmileWink } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle, faFrown, faSmile } from '@fortawesome/free-solid-svg-icons';
 import { RsvpService } from './rsvp.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ViewportScroller } from '@angular/common';
+import { format } from 'date-fns';
 
 @Component({
   selector: 'app-rsvp-form',
@@ -12,9 +13,9 @@ import { ViewportScroller } from '@angular/common';
 })
 export class RsvpFormComponent implements OnInit {
 
-  winkIcon = faSmileWink;
   smileIcon = faSmile;
   sadIcon = faFrown;
+  errorIcon = faExclamationTriangle;
 
   rsvpForm: FormGroup = new FormGroup({});
 
@@ -70,7 +71,10 @@ export class RsvpFormComponent implements OnInit {
   }
 
   submitForm(): void {
-    this.rsvpService.addResponse(this.rsvpForm.value).then(() => {
+    this.rsvpService.addResponse({
+      ...this.rsvpForm.value,
+      responseDate: { timestamp: Date.now(), formatted: format(new Date(), 'dd MMMM yyyy, HH:mm') }
+    }).then(() => {
       this.responseSent = true;
     });
     this.viewportScroller.setOffset([0, 100]);
