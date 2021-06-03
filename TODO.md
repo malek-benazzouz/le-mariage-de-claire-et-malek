@@ -1,49 +1,31 @@
 # TODO
 
+- In all texts, replace '.' by '·' (écriture inclusive)
+
 ## Header
 
-- add decorations (hearts?) between nav links
+- [prio 2] add decorations (hearts?) between nav links
 - in mobile view, make header "semi-sticky" (appear on scroll-up)
 - in mobile view, when nav is expanded, replace hamburger icon by x icon
 
 ## Section titles
 
-- add decoration around section titles
-
-## Carousel
-
-## Countdown
-
-## Intro
+- [prio 2] add decoration around section titles
 
 ## Couple pres
 
-- content: update couples quotes
-- add background image (e.g. olive motif)?
+- [prio 1] content: update couples quotes
+- [prio 1] add background image (e.g. olive motif)?
 
 ## Program
 
-- add useful contact numbers
+- [prio 1] add useful contact numbers
 
 ## Accommodation
 
 ## RSVP
 
-- add background image (e.g. olive motif)?
-
-## Money pot
-
-## Bonus image
-
-- add picture frame to image
-- [bonus] add other pictures using this:
-  https://www.shutterstock.com/image-vector/set-vintage-photo-frame-adhesive-tape-560559439?id=560559439&irclickid=RSDRXVTnRxyLUbHwUx0Mo3EtUkB2EwQXgw0j1M0&irgwc=1&utm_medium=Affiliate&utm_campaign=Free%20SVG&utm_source=2022575&utm_term=&c3ch=Affiliate&c3nid=IR-2022575
-
-## Footer
-
-- content: find and add footer quote
-
-# Admin page
+- [prio 1] add background image (e.g. olive motif)?
 
 ## Design / Style
 

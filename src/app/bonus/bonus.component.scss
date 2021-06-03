@@ -1,11 +1,44 @@
 @import "src/styles";
 
-#bonus-image {
+.bonus-img {
+  width: 600px;
+  border: 30px solid $almost-white;
   box-shadow: 0 0 20px -1px $tertiary;
-  width: 50%;
-  max-width: 800px;
+  backface-visibility: hidden;
+
+  @include media-breakpoint-down(xl) {
+    width: 500px;
+    border-width: 25px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 450px;
+    border-width: 25px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 400px;
+    border-width: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 325px;
+    border-width: 17px;
+  }
 
   @include media-breakpoint-down(sm) {
-    width: 80%;
+    width: 300px;
+    border-width: 15px;
   }
+}
+
+.bonus-img-left {
+  transform: rotate(-1deg);
+}
+
+.bonus-img-right {
+  transform: rotate(2deg);
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
 }
