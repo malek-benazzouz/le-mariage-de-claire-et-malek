@@ -1,39 +1,25 @@
 # TODO
 
-- In all texts, replace '.' by '·' (écriture inclusive)
+- [Prio] Finalize content:
+  - everywhere: replace '.' by '·' (écriture inclusive)
+  - couple pres: update couples quotes
+  - program: add useful contact numbers
 
-## Header
+- [Prio] Get ready for production:
+  - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
+  - perf: compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
+  - perf: download google fonts and add them to repo instead of fetching them from google?
+  - perf: add a pre-loading page while fetching images
+  - perf: test on slow device + slow connection
 
-- [prio 2] add decorations (hearts?) between nav links
-- in mobile view, make header "semi-sticky" (appear on scroll-up)
-- in mobile view, when nav is expanded, replace hamburger icon by x icon
+# Bonus
 
-## Couple pres
-
-- [prio 1] content: update couples quotes
-
-## Program
-
-- [prio 1] add useful contact numbers
-
-## Design / Style
-
-- add animations + customize style. Ideas:
+- header: add decorations (hearts?) between nav links
+- header: in mobile view, make header "semi-sticky" (appear on scroll-up)
+- header: in mobile view, when nav is expanded, replace hamburger icon by x icon
+- design: add animations - ideas:
   - http://preview.themeforest.net/item/onelove-the-elegant-clean-multipurpose-wedding-wordpress-theme/full_screen_preview/20235980
   - https://www.julie-bast.fr/
-
-- Make sure responsiveness is OK everywhere
-
-## Performance
-
-- compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
-- download google fonts and add them to repo instead of fetching them from google?
-- add a pre-loading page while fetching images
-- test on slow device + slow connection
-
-# Production
-
-- Fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
 
 ------------------------------------------------------------------------------
 
