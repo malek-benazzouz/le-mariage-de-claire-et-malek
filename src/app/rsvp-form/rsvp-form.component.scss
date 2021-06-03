@@ -1,12 +1,19 @@
 @import "src/styles";
 
 #rsvp-form {
-  background-color: $gray-very-light;
+  background: url("../../assets/bg-olive.png");
   box-shadow: 0 0 10px 0 $gray-dark;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
 }
 
 #rsvp-form-content {
+  box-shadow: 0 0 10px 0 $gray-medium;
   width: 90%;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
 }
 
 .name-field {

@@ -25,3 +25,13 @@
     font-size: 18px;
   }
 }
+
+.title-deco {
+  width: 100px;
+  position: relative;
+  top: -8px;
+}
+
+.title-deco-right {
+  transform: rotate(180deg);
+}

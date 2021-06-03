@@ -8,24 +8,13 @@
 - in mobile view, make header "semi-sticky" (appear on scroll-up)
 - in mobile view, when nav is expanded, replace hamburger icon by x icon
 
-## Section titles
-
-- [prio 2] add decoration around section titles
-
 ## Couple pres
 
 - [prio 1] content: update couples quotes
-- [prio 1] add background image (e.g. olive motif)?
 
 ## Program
 
 - [prio 1] add useful contact numbers
-
-## Accommodation
-
-## RSVP
-
-- [prio 1] add background image (e.g. olive motif)?
 
 ## Design / Style
 
