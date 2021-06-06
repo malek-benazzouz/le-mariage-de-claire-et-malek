@@ -10,7 +10,7 @@
 <div id="confirmations-wrapper" class="d-flex justify-content-around">
   <div id="confirmations-summary-card" class="card my-5">
     <div class="card-body">
-      <app-section-title title="CONFIRMATIONS" [subtitle]="rsvpSummary"></app-section-title>
+      <app-section-title title="CONFIRMATIONS" [subtitle]="rsvpSummary" [noDeco]="true"></app-section-title>
 
       <!-- Login form - if user is not authenticated -->
       <div *ngIf="(isAuthenticated$ | async) === false" class="text-center">
