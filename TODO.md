@@ -1,7 +1,6 @@
 # TODO
 
 - [Prio] Finalize content:
-  - everywhere: replace '.' by '·' (écriture inclusive)
   - couple pres: update couples quotes
 
 - [Prio] Get ready for production:

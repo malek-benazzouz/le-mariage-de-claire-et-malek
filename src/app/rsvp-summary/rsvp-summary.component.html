@@ -7,7 +7,7 @@
 <!-- Party - present -->
 <div class="row d-flex align-items-baseline my-2 my-md-0">
   <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Mairie et soirée</span>
-  <span class="col text-center text-md-left pl-md-1 value">{{ response.partyPresent === 'yes' ? 'Présent.e' : 'Absent.e' }}</span>
+  <span class="col text-center text-md-left pl-md-1 value">{{ response.partyPresent === 'yes' ? 'Présent(e)' : 'Absent(e)' }}</span>
 </div>
 
 <!-- Party - plus one -->
@@ -18,7 +18,7 @@
 
 <!-- Party - children -->
 <div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.partyPresent === 'yes' && response.partyChildrenPresent">
-  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son.ses bout'chou</span>
+  <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son(ses) bout'chou</span>
   <span class="col text-center text-md-left pl-md-1 value">{{ response.partyChildrenDetails }}</span>
 </div>
 
@@ -33,7 +33,7 @@
   <!-- Brunch - present -->
   <div class="row d-flex align-items-baseline my-2 my-md-0">
     <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Brunch</span>
-    <span class="col text-center text-md-left pl-md-1 value">{{ response.brunchPresent === 'yes' ? 'Présent.e' : 'Absent.e' }}</span>
+    <span class="col text-center text-md-left pl-md-1 value">{{ response.brunchPresent === 'yes' ? 'Présent(e)' : 'Absent(e)' }}</span>
   </div>
 
   <!-- Brunch - plus one -->
@@ -45,7 +45,7 @@
 
   <!-- Brunch - children -->
   <div class="row d-flex align-items-baseline my-2 my-md-0" *ngIf="response.brunchPresent === 'yes' && response.brunchChildrenPresent">
-    <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son.ses bout'chou</span>
+    <span class="col-12 col-md-6 text-center text-md-right pr-md-1 label">Avec son(ses) bout'chou</span>
     <span class="col text-center text-md-left pl-md-1 value">{{ response.brunchChildrenDetails }}</span>
   </div>
 
@@ -61,7 +61,9 @@
 <div class="row d-flex align-items-baseline my-2" *ngIf="!isAdmin && (response.partyPresent === 'yes' || response.brunchPresent === 'yes')">
   <span class="col-12 text-center label">Je m’engage à&nbsp;:</span>
   <span class="col-12 text-center value">
-    Envoyer une photo de ma p’tite tête à l’adresse email ***REMOVED*** avant le 30 juin
+    Envoyer une photo de ma p’tite tête à l’adresse email
+    <a class="text-primary" href="mailto:***REMOVED***">***REMOVED***</a>
+    avant le 30 juin
   </span>
 </div>
 
