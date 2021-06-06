@@ -1,9 +1,5 @@
 # TODO
 
-- [Prio] Get ready for production:
-  - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
-  - perf: download google fonts and add them to repo instead of fetching them from google?
-
 - [PRD] Load in production:
   - load webapp in both o2switch and firebase hosting (ideally move owned .com domain name to firebase hosting)
   - post-prod: test on different devices (mobile, slower laptop) + test with mobile network
