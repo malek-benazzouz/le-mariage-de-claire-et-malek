@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Bootstrap variable overrides. They must be done before Bootstrap variables file import.
+
+$grid-breakpoints: (xxs: 0, xs: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px);
+
+$primary: #D3DAD0;
+$primary-dark: #8a8e88;
+$secondary: #ce0058;
+$tertiary: #495057;
+
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Custom variables
+
+$white: $white;
+$almost-white: $gray-100;
+$gray-very-light: $gray-200;
+$gray-light: $gray-300;
+$gray-medium: $gray-400;
+$gray-dark: $gray-500;
+$gray-very-dark: $gray-600;
+$almost-black: $gray-700;
+$black-ish: $gray-900;
+
+$background-color: $white;
+$text-color: $almost-black;

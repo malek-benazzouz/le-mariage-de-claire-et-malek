@@ -1,4 +1,5 @@
-@import "src/styles";
+@import "../../style/variables";
+@import "~bootstrap/scss/mixins";
 
 .title {
   white-space: nowrap;

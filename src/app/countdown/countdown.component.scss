@@ -1,4 +1,6 @@
-@import "src/styles";
+@import "../../style/variables";
+@import "../../style/fonts";
+@import "~bootstrap/scss/mixins";
 
 .number {
   @extend .font-family-cursive;
