@@ -1,6 +1,7 @@
 <!-- Image -->
 <div class="d-flex justify-content-center">
-  <img class="program-image w-100 mb-3" src="assets/picture-bertrands-entrance.jpg">
+  <img class="program-image w-100 mb-3" src="assets/picture-bertrands-entrance.jpg"
+       (load)="loadingService.onImageLoaded('picture-bertrands-entrance')">
 </div>
 
 <!-- Address - displayed for print only -->

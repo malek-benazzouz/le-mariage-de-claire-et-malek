@@ -1,15 +1,16 @@
 # TODO
 
+- fix olive branch deco on mobile
+
 - [Prio] Finalize content:
   - everywhere: replace '.' by '·' (écriture inclusive)
   - couple pres: update couples quotes
-  - program: add useful contact numbers
+  - program: add useful contact number -> Guigui's number
 
 - [Prio] Get ready for production:
   - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
   - perf: compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
   - perf: download google fonts and add them to repo instead of fetching them from google?
-  - perf: add a pre-loading page while fetching images
   - perf: test on slow device + slow connection
 
 # Bonus

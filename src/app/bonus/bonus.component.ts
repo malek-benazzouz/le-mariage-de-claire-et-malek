@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-bonus',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BonusComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) { }
 
   ngOnInit(): void {}
+
+  onImageLoadStart(): void {
+
+  }
 
 }

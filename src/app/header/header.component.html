@@ -2,7 +2,8 @@
   <!-- Page title -->
   <span class="title font-family-main d-flex align-items-center">
     <span class="title-part title-claire">CLAIRE</span>
-    <img class="wedding-rings-icon" src="assets/wedding-rings.svg">
+    <img class="wedding-rings-icon" src="assets/wedding-rings.svg"
+         (load)="loadingService.onImageLoaded('wedding-rings')">
     <span class="title-part title-malek">MALEK</span>
   </span>
 

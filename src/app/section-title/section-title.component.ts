@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-section-title',
@@ -11,7 +12,7 @@ export class SectionTitleComponent implements OnInit {
   @Input() subtitle?: string;
   @Input() extraText?: string;
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) { }
 
   ngOnInit(): void {}
 
