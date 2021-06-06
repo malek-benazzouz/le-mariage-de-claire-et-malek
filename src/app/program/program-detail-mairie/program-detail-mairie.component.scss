@@ -1,3 +1,5 @@
+@import "src/styles";
+
 ul {
   list-style-type: circle;
 }
@@ -12,4 +14,9 @@ ul {
 
 .warning-icon {
   font-size: 14px;
+}
+
+.phone-icon {
+  color: $secondary;
+  opacity: 0.8;
 }

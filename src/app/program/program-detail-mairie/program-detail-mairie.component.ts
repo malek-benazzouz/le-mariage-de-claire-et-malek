@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faExclamationTriangle, faInfoCircle, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle, faInfoCircle, faMapMarkedAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { LoadingService } from '../../loading/loading.service';
 
 
@@ -13,6 +13,7 @@ export class ProgramDetailMairieComponent implements OnInit {
   itineraryIcon = faMapMarkedAlt;
   infoIcon = faInfoCircle;
   warningIcon = faExclamationTriangle;
+  phoneIcon = faPhoneAlt;
 
   itineraryLinkVauban = 'https://www.google.com/maps/dir/Parking+Port+Vauban,+Quai+du+Corps+Expeditionnaire+Fran%C3%A7ais+en+Italie,' +
     '+Antibes/Ville+d\'Antibes+Juan-les-Pins,+Cours+Mass%C3%A9na,+Antibes/@43.5827631,7.1266117,17.52z/data=!4m14!4m13!1m5!1m1!1s0x12cd' +

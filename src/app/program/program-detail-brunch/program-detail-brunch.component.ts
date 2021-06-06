@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHotdog, faInfoCircle, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faHotdog, faInfoCircle, faPhoneAlt, faSun } from '@fortawesome/free-solid-svg-icons';
 import { LoadingService } from '../../loading/loading.service';
 
 @Component({
@@ -12,6 +12,7 @@ export class ProgramDetailBrunchComponent implements OnInit {
   infoIcon = faInfoCircle;
   relaxIcon = faHotdog;
   chillIcon = faSun;
+  phoneIcon = faPhoneAlt;
 
   constructor(public loadingService: LoadingService) {}
 

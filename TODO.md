@@ -3,7 +3,6 @@
 - [Prio] Finalize content:
   - everywhere: replace '.' by '·' (écriture inclusive)
   - couple pres: update couples quotes
-  - program: add useful contact number -> Guigui's number
 
 - [Prio] Get ready for production:
   - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
