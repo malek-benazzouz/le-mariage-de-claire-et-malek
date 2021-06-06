@@ -1,8 +1,5 @@
 # TODO
 
-- [Prio] Finalize content:
-  - couple pres: update couples quotes
-
 - [Prio] Get ready for production:
   - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
   - perf: compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image

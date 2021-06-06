@@ -7,9 +7,7 @@
       <h5 class="card-title font-family-cursive h2">Le Marié</h5>
       <p class="card-text">Malek, 29 ans et {{ daysAfter29thBirthdayMalek }} jours</p>
       <p class="card-text">
-        «&nbsp;Sa douceur,<br>
-        son grain de beauté,<br>
-        ses délicieuses planchas...&nbsp;»
+        «&nbsp;Sa douceur, son grain de beauté à la droite de ses lèvres, ses tektoukas<sup>*</sup>&nbsp;»
       </p>
     </div>
   </div>
@@ -26,11 +24,57 @@
       <h5 class="card-title font-family-cursive h2">La Mariée</h5>
       <p class="card-text">Claire, 29 ans et {{ daysAfter29thBirthdayClaire }} jours</p>
       <p class="card-text">
-        «&nbsp;Sa générosité,<br>
-        sa voix de chanteuse,<br>
-        son orteil potelé...&nbsp;»
+        «&nbsp;Sa générosité, sa voix de chanteuse, son orteil potelé<sup>**</sup>&nbsp;»
       </p>
     </div>
   </div>
 
 </div>
+
+<p class="text-center small m-3">
+  <sup>*</sup> Mets marocains délicieux réalisés avec amour.
+  <a class="text-secondary" href="javascript:void(0)" (click)="openModal(tektoukaRecipe)">Voir la recette</a>.
+  <br>
+  <sup>**</sup> 4<sup>ème</sup> orteil bien nourri en tektouka, ce qui explique sa proéminence.
+</p>
+
+<!-- Tektouka recipe modal -->
+<ng-template #tektoukaRecipe let-modal>
+  <div id="recipe-modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">La Tektouka selon Malek (recette transmise par sa maman)</h4>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h2 class="font-family-cursive mb-3">Ingrédients</h2>
+      <ul>
+        <li>Tomates</li>
+        <li>Poivrons</li>
+        <li>Paprika</li>
+        <li>Cumin</li>
+        <li>Sel</li>
+        <li>Vinaigre (de table)</li>
+        <li>Persil</li>
+        <li>Coriandre</li>
+        <li>Huile d’olive</li>
+      </ul>
+      <h2 class="font-family-cursive mb-3">Recette</h2>
+      <ul>
+        <li>Eplucher les tomates, les découper en petits morceaux.</li>
+        <li>Griller (ou frire) les poivrons, en enlever la peau, les découper en petits morceaux.</li>
+        <li>Dans un poêle froide, mettre l'ail, le paprika, le cumin, le sel, le persil et la coriandre hachés et l'huile d'olive.</li>
+        <li>Mettre la poêle sur le feu, faire chauffer 15 secondes.</li>
+        <li>Mettre les poivrons et tomates et rajouter le vinaigre.</li>
+        <li>Laisser mijoter à feu doux durant au moins 30 munites<sup>*</sup> (jusqu'à obtention d'une texture fondante).</li>
+      </ul>
+      <p class="mt-4">
+        <sup>*</sup> Une <i>munite</i> est une minute marocaine. Sa durée varie de 30 secondes à 7 minutes.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Close click')">Fermer</button>
+    </div>
+  </div>
+</ng-template>
