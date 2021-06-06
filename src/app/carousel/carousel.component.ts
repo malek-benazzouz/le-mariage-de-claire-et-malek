@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-carousel',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) {}
 
   ngOnInit(): void {}
 

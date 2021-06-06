@@ -3,28 +3,32 @@
   <!-- Picture 1 -->
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper text-center">
-      <img class="w-100" src="assets/picture-c-and-m-1.jpg" alt="Claire et Malek">
+      <img class="w-100" src="assets/picture-c-and-m-1.jpg" alt="Claire et Malek"
+           (load)="loadingService.onImageLoaded('picture-c-and-m-1')">
     </div>
   </ng-template>
 
   <!-- Picture 2 -->
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper text-center">
-      <img class="w-100" src="assets/picture-antibes.png" alt="Antibes">
+      <img class="w-100" src="assets/picture-antibes.png" alt="Antibes"
+           (load)="loadingService.onImageLoaded('picture-antibes')">
     </div>
   </ng-template>
 
   <!-- Picture 3 -->
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper text-center">
-      <img class="w-100" src="assets/picture-c-and-m-2.jpg" alt="Claire et Malek">
+      <img class="w-100" src="assets/picture-c-and-m-2.jpg" alt="Claire et Malek"
+           (load)="loadingService.onImageLoaded('picture-c-and-m-2')">
     </div>
   </ng-template>
 
   <!-- Picture 4 -->
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper text-center">
-      <img class="w-100" src="assets/picture-bertrands.png" alt="Le Domaine des Bertrands">
+      <img class="w-100" src="assets/picture-bertrands.png" alt="Le Domaine des Bertrands"
+           (load)="loadingService.onImageLoaded('picture-bertrands')">
     </div>
   </ng-template>
 

@@ -1,1 +1,6 @@
 <router-outlet></router-outlet>
+
+<!-- Loading overlay while images are loading -->
+<div class="loading-overlay d-flex justify-content-center align-items-center" *ngIf="displayLoadingOverlay">
+  <img [@bounce]="animationState" (@bounce.done)="onAnimationComplete()" src="assets/heart.svg" alt="Coeur" style="width: 100px">
+</div>

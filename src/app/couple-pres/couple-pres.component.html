@@ -1,7 +1,8 @@
 <div id="couple-pres" class="responsive-padding d-flex justify-content-center">
 
   <div class="card" [@goRight]="isComponentVisible ? 'right' : 'left'">
-    <img class="card-img-top" src="assets/picture-m.jpg" alt="Malek">
+    <img class="card-img-top" src="assets/picture-m.jpg" alt="Malek"
+         (load)="loadingService.onImageLoaded('picture-m')">
     <div class="card-body text-center">
       <h5 class="card-title font-family-cursive h2">Le Marié</h5>
       <p class="card-text">Malek, 29 ans et {{ daysAfter29thBirthdayMalek }} jours</p>
@@ -14,11 +15,13 @@
   </div>
 
   <div>
-    <img [@fade]="isComponentVisible ? 'in' : 'out'" src="../../assets/heart-full-red.svg" alt="Coeur" style="width: 24px">
+    <img [@fade]="isComponentVisible ? 'in' : 'out'" src="../../assets/heart-full-red.svg" alt="Coeur" style="width: 24px"
+         (load)="loadingService.onImageLoaded('heart-full-red')">
   </div>
 
   <div class="card" [@goLeft]="isComponentVisible ? 'left' : 'right'">
-    <img class="card-img-top" src="assets/picture-c.jpg" alt="Claire">
+    <img class="card-img-top" src="assets/picture-c.jpg" alt="Claire"
+         (load)="loadingService.onImageLoaded('picture-c')">
     <div class="card-body text-center">
       <h5 class="card-title font-family-cursive h2">La Mariée</h5>
       <p class="card-text">Claire, 29 ans et {{ daysAfter29thBirthdayClaire }} jours</p>

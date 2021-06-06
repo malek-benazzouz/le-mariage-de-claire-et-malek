@@ -5,6 +5,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ViewportScroller } from '@angular/common';
 import { format } from 'date-fns';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-rsvp-form',
@@ -46,7 +47,8 @@ export class RsvpFormComponent implements OnInit {
   constructor(
     private rsvpService: RsvpService,
     private modalService: NgbModal,
-    private viewportScroller: ViewportScroller
+    private viewportScroller: ViewportScroller,
+    public loadingService: LoadingService
   ) {
     Object.entries(this.controls).forEach(([name, control]: [string, FormControl]) => {
       this.rsvpForm.addControl(name, control);

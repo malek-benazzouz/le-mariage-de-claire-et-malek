@@ -162,11 +162,14 @@
           </p>
 
           <div class="d-sm-flex justify-content-center text-center m-4">
-            <img class="young-picture m-1 m-md-2" src="assets/picture-young-c.png" alt="Bébé Claire">
+            <img class="young-picture m-1 m-md-2" src="assets/picture-young-c.png" alt="Bébé Claire"
+                 (load)="loadingService.onImageLoaded('picture-young-c')">
             <div class="heart-between-pictures">
-              <img src="../../assets/heart-full-red.svg" alt="Coeur" style="width: 24px">
+              <img src="../../assets/heart-full-red.svg" alt="Coeur" style="width: 24px"
+                   (load)="loadingService.onImageLoaded('heart-full-red')">
             </div>
-            <img class="young-picture m-1 m-md-2" src="assets/picture-young-m.png" alt="Bébé Malek">
+            <img class="young-picture m-1 m-md-2" src="assets/picture-young-m.png" alt="Bébé Malek"
+                 (load)="loadingService.onImageLoaded('picture-young-m')">
           </div>
 
           <p>

@@ -13,7 +13,8 @@
     <div class="timeline left">
       <div class="card">
         <div class="card-body p-4 text-center">
-          <img src="assets/mairie.svg" alt="Mairie" style="width: 73px;" class="mb-3">
+          <img src="assets/mairie.svg" alt="Mairie" style="width: 73px;" class="mb-3"
+               (load)="loadingService.onImageLoaded('mairie')">
           <h3 class="font-family-cursive mb-4">La mairie</h3>
           <p class="mb-4">
             Le samedi 04 septembre à 15h30<br>
@@ -26,14 +27,16 @@
           </button>
         </div>
       </div>
-      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon"
+           (load)="loadingService.onImageLoaded('heart-full-white')">
     </div>
 
     <!-- Step 2: wedding party -->
     <div class="timeline right">
       <div class="card">
         <div class="card-body p-4 text-center">
-          <img src="assets/confetti.svg" alt="Confetti" style="width: 70px;" class="mb-4">
+          <img src="assets/confetti.svg" alt="Confetti" style="width: 70px;" class="mb-4"
+               (load)="loadingService.onImageLoaded('confetti')">
           <h3 class="font-family-cursive mb-4">La Wedding Party</h3>
           <p class="mb-4">
             Le samedi 04 septembre à 18h<br>
@@ -47,14 +50,16 @@
           </button>
         </div>
       </div>
-      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon"
+           (load)="loadingService.onImageLoaded('heart-full-white')">
     </div>
 
     <!-- Step 3: brunch -->
     <div class="timeline left">
       <div class="card">
         <div class="card-body p-4 text-center">
-          <img src="assets/sun.svg" alt="Soleil" style="width: 70px;" class="mb-3">
+          <img src="assets/sun.svg" alt="Soleil" style="width: 70px;" class="mb-3"
+               (load)="loadingService.onImageLoaded('sun')">
           <h3 class="font-family-cursive mb-4">Le Brunch</h3>
           <p class="mb-4">
             Le dimanche 05 septembre à 12h<br>
@@ -68,7 +73,8 @@
           </button>
         </div>
       </div>
-      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon">
+      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon"
+           (load)="loadingService.onImageLoaded('heart-full-white')">
     </div>
 
   </div>
@@ -142,3 +148,11 @@
     </div>
   </div>
 </ng-template>
+
+<!-- Modals images pre-load -->
+<img hidden src="assets/picture-mairie.jpg" alt="La mairie d'Antibes"
+     (load)="loadingService.onImageLoaded('picture-mairie')">
+<img hidden src="assets/picture-bertrands-entrance.jpg" alt="Les Bertrands"
+     (load)="loadingService.onImageLoaded('picture-bertrands-entrance')">
+<img hidden src="assets/picture-bertrands-pool.jpg" alt="La piscine des Bertrands"
+     (load)="loadingService.onImageLoaded('picture-bertrands-pool')">

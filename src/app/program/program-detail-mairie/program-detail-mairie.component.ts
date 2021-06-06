@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faExclamationTriangle, faInfoCircle, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { LoadingService } from '../../loading/loading.service';
 
 
 @Component({
@@ -23,7 +24,7 @@ export class ProgramDetailMairieComponent implements OnInit {
     '2cdd5720676d6ab:0x753415caa8cb4b51!2m2!1d7.125296!2d43.5838431!1m5!1m1!1s0x12cdd56b4ae20fcb:0x493ac71612527506!2m2!1d7.12783' +
     '08!2d43.5813427!3e2';
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) {}
 
   ngOnInit(): void {}
 

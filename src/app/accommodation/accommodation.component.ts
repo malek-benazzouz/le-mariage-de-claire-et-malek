@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBook, faClock, faEuroSign, faHandPointDown, faMapMarkedAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-accommodation',
@@ -52,7 +53,7 @@ export class AccommodationComponent implements OnInit {
     'data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.41233!2d43.367607!1m5!1m1!1s0x12c94e11684949db:0x' +
     '3b8af3dc918a02b7!2m2!1d6.3043748!2d43.4523845!3e0';
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) { }
 
   ngOnInit(): void {}
 

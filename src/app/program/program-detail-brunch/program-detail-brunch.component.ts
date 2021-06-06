@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faHotdog, faInfoCircle, faSun } from '@fortawesome/free-solid-svg-icons';
+import { LoadingService } from '../../loading/loading.service';
 
 @Component({
   selector: 'app-program-detail-brunch',
@@ -12,7 +13,7 @@ export class ProgramDetailBrunchComponent implements OnInit {
   relaxIcon = faHotdog;
   chillIcon = faSun;
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) {}
 
   ngOnInit(): void {}
 

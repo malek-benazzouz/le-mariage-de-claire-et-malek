@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LoadingService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   isNavCollapsed = true;
 
-  constructor() { }
+  constructor(public loadingService: LoadingService) {}
 
   ngOnInit(): void {}
 
