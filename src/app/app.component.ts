@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
       this.displayLoadingOverlay = false;
       return;
     }
-    timer(4000, 500)
+    timer(3000, 500)
       .pipe(takeUntil(this.criticalImagesLoaded$))
       .subscribe(() => {
         if (this.loadingService.criticalImagesLoaded) {
