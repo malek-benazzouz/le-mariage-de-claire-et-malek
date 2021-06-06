@@ -3,7 +3,7 @@
 <div id="rsvp-form" class="d-flex justify-content-around responsive-padding">
   <div id="rsvp-form-content" class="card">
     <div class="card-body">
-      <app-section-title title="CONFIRMATION"></app-section-title>
+      <app-section-title title="CONFIRMATION" [noDeco]="true"></app-section-title>
 
       <!-- Form content -->
       <form class="form" [formGroup]="rsvpForm" *ngIf="!this.responseSent">

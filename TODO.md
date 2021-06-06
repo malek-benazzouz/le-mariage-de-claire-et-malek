@@ -1,7 +1,5 @@
 # TODO
 
-- fix olive branch deco on mobile
-
 - [Prio] Finalize content:
   - everywhere: replace '.' by '·' (écriture inclusive)
   - couple pres: update couples quotes
@@ -11,7 +9,10 @@
   - fix css files budget issue (ng build --prod issue): it probably comes from `@import "src/styles";`
   - perf: compress all images and make sure their size is acceptable -> https://www.iloveimg.com/fr/compresser-image
   - perf: download google fonts and add them to repo instead of fetching them from google?
-  - perf: test on slow device + slow connection
+
+- [PRD] Load in production:
+  - load webapp in both o2switch and firebase hosting (ideally move owned .com domain name to firebase hosting)
+  - post-prod: test on different devices (mobile, slower laptop) + test with mobile network
 
 # Bonus
 
