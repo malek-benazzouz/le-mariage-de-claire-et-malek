@@ -3,6 +3,7 @@ import { differenceInDays } from 'date-fns';
 import { ScrollDispatcher } from '@angular/cdk/overlay';
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { LoadingService } from '../loading/loading.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-couple-pres',
@@ -48,7 +49,12 @@ export class CouplePresComponent implements OnInit {
 
   isComponentVisible = false;
 
-  constructor(private scrollDispatcher: ScrollDispatcher, el: ElementRef, public loadingService: LoadingService) {
+  constructor(
+    private modalService: NgbModal,
+    private scrollDispatcher: ScrollDispatcher,
+    el: ElementRef,
+    public loadingService: LoadingService
+  ) {
     this.scrollDispatcher.scrolled(100).subscribe(() => {
       const rect = el.nativeElement.getBoundingClientRect();
       if (rect.top > 0 && rect.bottom < window.innerHeight) { // fully visible
@@ -61,5 +67,9 @@ export class CouplePresComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  openModal(content: any): void {
+    this.modalService.open(content, { size: 'lg', centered: true });
+  }
 
 }
