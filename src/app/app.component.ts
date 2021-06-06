@@ -36,6 +36,10 @@ export class AppComponent implements OnInit {
   constructor(public loadingService: LoadingService) {}
 
   ngOnInit(): void {
+    if (window.location.pathname === '/admin') {
+      this.displayLoadingOverlay = false;
+      return;
+    }
     timer(4000, 500)
       .pipe(takeUntil(this.criticalImagesLoaded$))
       .subscribe(() => {
