@@ -11,6 +11,7 @@ export class SectionTitleComponent implements OnInit {
   @Input() title: string;
   @Input() subtitle?: string;
   @Input() extraText?: string;
+  @Input() noDeco?: boolean;
 
   constructor(public loadingService: LoadingService) { }
 

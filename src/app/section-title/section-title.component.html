@@ -1,9 +1,9 @@
 <div class="mb-5">
   <h1 class="title text-center font-family-cursive display-4">
-    <img src="assets/olive-branch.png" alt="deco" class="title-deco title-deco-left"
+    <img src="assets/olive-branch.png" alt="deco" class="title-deco title-deco-left" *ngIf="!noDeco"
          (load)="loadingService.onImageLoaded('olive-branch')">
     {{ title }}
-    <img src="assets/olive-branch.png" alt="deco" class="title-deco title-deco-right"
+    <img src="assets/olive-branch.png" alt="deco" class="title-deco title-deco-right" *ngIf="!noDeco"
          (load)="loadingService.onImageLoaded('olive-branch')">
   </h1>
   <h4 *ngIf="subtitle" class="subtitle text-center">{{ subtitle }}</h4>
