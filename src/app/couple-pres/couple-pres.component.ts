@@ -56,8 +56,8 @@ export class CouplePresComponent implements OnInit {
     public loadingService: LoadingService
   ) {
     this.scrollDispatcher.scrolled(100).subscribe(() => {
-      const rect = el.nativeElement.getBoundingClientRect();
-      if (rect.top > 0 && rect.bottom < window.innerHeight) { // fully visible
+      const rect = el.nativeElement.querySelector('#couple-pres').getBoundingClientRect();
+      if (rect.top > 0 && rect.bottom < window.innerHeight + 50) { // fully visible
         this.isComponentVisible = true;
       }
       if (rect.top > window.innerHeight || rect.bottom < 0) { // fully invisible
