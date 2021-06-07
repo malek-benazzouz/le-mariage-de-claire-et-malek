@@ -48,7 +48,7 @@
               Si vous cochez cette case, votre moitié n'aura pas à remplir le formulaire de confirmation.<br>
               Ne cochez pas cette case si vous êtes célibataire ou si vous préfèrez qu’il(elle) reste à la maison.
             </ng-template>
-            <mat-icon [ngbTooltip]="partyPlusOnePresentInstructions" triggers="hover focus click" class="info-icon ml-2">info</mat-icon>
+            <mat-icon [ngbTooltip]="partyPlusOnePresentInstructions" class="info-icon ml-2">info</mat-icon>
           </p>
           <p *ngIf="controls.partyPlusOnePresent.value">
             <mat-form-field appearance="fill" class="name-field">
@@ -71,7 +71,7 @@
             <ng-template #partyChildrenPresentInstructions>
               Note&nbsp;: les enfants des voisins ne seront pas acceptés.
             </ng-template>
-            <mat-icon [ngbTooltip]="partyChildrenPresentInstructions" triggers="hover focus click" class="info-icon ml-2">info</mat-icon>
+            <mat-icon [ngbTooltip]="partyChildrenPresentInstructions" class="info-icon ml-2">info</mat-icon>
           </p>
           <p *ngIf="controls.partyChildrenPresent.value">
             <mat-form-field appearance="fill" class="name-field-full">
@@ -114,7 +114,7 @@
               <ng-template #brunchPlusOnePresentInstructions>
                 Nous espérons que ce soit la même personne que la veille.
               </ng-template>
-              <mat-icon [ngbTooltip]="brunchPlusOnePresentInstructions" triggers="hover focus click" class="info-icon ml-2">info</mat-icon>
+              <mat-icon [ngbTooltip]="brunchPlusOnePresentInstructions" class="info-icon ml-2">info</mat-icon>
             </p>
             <p *ngIf="controls.brunchPlusOnePresent.value">
               <mat-form-field appearance="fill" class="name-field">
@@ -137,7 +137,7 @@
               <ng-template #brunchChildrenPresentInstructions>
                 Note&nbsp;: les enfants des voisins ne seront toujours pas acceptés.
               </ng-template>
-              <mat-icon [ngbTooltip]="brunchChildrenPresentInstructions" triggers="hover focus click" class="info-icon ml-2">info</mat-icon>
+              <mat-icon [ngbTooltip]="brunchChildrenPresentInstructions" class="info-icon ml-2">info</mat-icon>
             </p>
             <p *ngIf="controls.brunchChildrenPresent.value">
               <mat-form-field appearance="fill" class="name-field-full">
