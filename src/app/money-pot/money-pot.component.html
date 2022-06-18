@@ -11,22 +11,22 @@
 
   <!-- RIB -->
   <div class="rib-wrapper d-inline-block m-3 p-4">
-    <div class="mb-2"><strong>Mlle ANGEVIN Claire</strong></div>
+    <div class="mb-2"><strong>M. BENAZZOUZ M ou Mlle ANGEVIN</strong></div>
     <!-- IBAN -->
     <div class="d-flex justify-content-center">
       <span class="rib-label mr-2">IBAN</span>
-      FR76 4061 8802 9800 0403 5496 211
+      FR76 ***REMOVED***
       <mat-icon class="copy-icon ml-2" ngbTooltip="Copier le code IBAN"
-                cdkCopyToClipboard="FR7640618802980004035496211" (cdkCopyToClipboardCopied)="ibanCopied = true;">content_copy
-      </mat-icon>
+                cdkCopyToClipboard="FR764***REMOVED***"
+                (cdkCopyToClipboardCopied)="ibanCopied = true;">content_copy</mat-icon>
     </div>
     <!-- BIC -->
     <div class="d-flex justify-content-center">
       <span class="rib-label mr-2">BIC</span>
       ***REMOVED***
       <mat-icon class="copy-icon ml-2" ngbTooltip="Copier le code BIC"
-                cdkCopyToClipboard="***REMOVED***" (cdkCopyToClipboardCopied)="bicCopied = true;">content_copy
-      </mat-icon>
+                cdkCopyToClipboard="***REMOVED***"
+                (cdkCopyToClipboardCopied)="bicCopied = true;">content_copy</mat-icon>
     </div>
     <!-- Copy to clipboard confirmation -->
     <ngb-toast *ngIf="ibanCopied" class="mt-4" (hidden)="ibanCopied=false" [delay]="3000">IBAN copié dans le presse-papier</ngb-toast>

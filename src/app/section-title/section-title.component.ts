@@ -10,6 +10,7 @@ export class SectionTitleComponent implements OnInit {
 
   @Input() title: string;
   @Input() subtitle?: string;
+  @Input() subtitleHtml?: string;
   @Input() extraText?: string;
   @Input() noDeco?: boolean;
 

@@ -2,44 +2,44 @@
 
 <app-section-title
   title="DÉROULEMENT"
-  subtitle="Le 4 septembre 2021"
-  extraText="Antibes, Le Cannet-des-Maures"
+  subtitleHtml="Du 1<sup>er</sup> au 2 octobre 2022"
+  extraText="Le Cannet-des-Maures"
 ></app-section-title>
 
 <div class="container p-0 pb-3">
   <div class="main-timeline">
 
-    <!-- Step 1: mairie -->
-    <div class="timeline left">
-      <div class="card">
-        <div class="card-body p-4 text-center">
-          <img src="assets/mairie.svg" alt="Mairie" style="width: 73px;" class="mb-3"
-               (load)="loadingService.onImageLoaded('mairie')">
-          <h3 class="font-family-cursive mb-4">La mairie</h3>
-          <p class="mb-4">
-            Le samedi 04 septembre à 15h30<br>
-            Mairie d'Antibes<br>
-            24 Cours Masséna, 06600 Antibes
-          </p>
-          <button type="button" class="more-info-btn btn btn-outline-light" (click)="openModal(moreInfoMairie)">
-            <fa-icon [icon]="moreInfoIcon" class="more-info-icon mr-2"></fa-icon>
-            Plus d'infos
-          </button>
-        </div>
-      </div>
-      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon"
-           (load)="loadingService.onImageLoaded('heart-full-white')">
-    </div>
+    <!-- Step 1: mairie --><!-- Commented as only a few members are invited -->
+    <!--    <div class="timeline left">-->
+    <!--      <div class="card">-->
+    <!--        <div class="card-body p-4 text-center">-->
+    <!--          <img src="assets/mairie.svg" alt="Mairie" style="width: 73px;" class="mb-3"-->
+    <!--               (load)="loadingService.onImageLoaded('mairie')">-->
+    <!--          <h3 class="font-family-cursive mb-4">La mairie</h3>-->
+    <!--          <p class="mb-4">-->
+    <!--            Le vendredi 30 septembre à 11h00<br>-->
+    <!--            Mairie d'Antibes<br>-->
+    <!--            24 Cours Masséna, 06600 Antibes-->
+    <!--          </p>-->
+    <!--          <button type="button" class="more-info-btn btn btn-outline-light" (click)="openModal(moreInfoMairie)">-->
+    <!--            <fa-icon [icon]="moreInfoIcon" class="more-info-icon mr-2"></fa-icon>-->
+    <!--            Plus d'infos-->
+    <!--          </button>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <img src="../../assets/heart-full-white.svg" alt="Coeur" style="width: 30px;" class="timeline-event-icon"-->
+    <!--           (load)="loadingService.onImageLoaded('heart-full-white')">-->
+    <!--    </div>-->
 
     <!-- Step 2: wedding party -->
-    <div class="timeline right">
+    <div class="timeline left">
       <div class="card">
         <div class="card-body p-4 text-center">
           <img src="assets/confetti.svg" alt="Confetti" style="width: 70px;" class="mb-4"
                (load)="loadingService.onImageLoaded('confetti')">
           <h3 class="font-family-cursive mb-4">La Wedding Party</h3>
           <p class="mb-4">
-            Le samedi 04 septembre à 18h<br>
+            Le samedi 01 octobre à 16h<br>
             Domaine des Bertrands<br>
             Route de La Garde-Freinet<br>
             83340 Le Cannet-des-Maures
@@ -55,14 +55,14 @@
     </div>
 
     <!-- Step 3: brunch -->
-    <div class="timeline left">
+    <div class="timeline right">
       <div class="card">
         <div class="card-body p-4 text-center">
           <img src="assets/sun.svg" alt="Soleil" style="width: 70px;" class="mb-3"
                (load)="loadingService.onImageLoaded('sun')">
           <h3 class="font-family-cursive mb-4">Le Brunch</h3>
           <p class="mb-4">
-            Le dimanche 05 septembre à 12h<br>
+            Le dimanche 02 octobre à 12h<br>
             Domaine des Bertrands<br>
             Route de La Garde-Freinet<br>
             83340 Le Cannet-des-Maures
