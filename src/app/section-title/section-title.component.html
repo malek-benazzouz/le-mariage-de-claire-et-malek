@@ -7,5 +7,6 @@
          (load)="loadingService.onImageLoaded('olive-branch')">
   </h1>
   <h4 *ngIf="subtitle" class="subtitle text-center">{{ subtitle }}</h4>
+  <h4 *ngIf="subtitleHtml" class="subtitle text-center" [innerHTML]="subtitleHtml"></h4>
   <h5 *ngIf="extraText" class="extra-text text-center">{{ extraText }}</h5>
 </div>

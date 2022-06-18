@@ -44,8 +44,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CouplePresComponent implements OnInit {
 
-  daysAfter29thBirthdayClaire = differenceInDays(new Date(), new Date('2020-11-02'));
-  daysAfter29thBirthdayMalek = differenceInDays(new Date(), new Date('2020-11-07'));
+  daysAfter30thBirthdayClaire = differenceInDays(new Date(), new Date('2021-11-02'));
+  daysAfter30thBirthdayMalek = differenceInDays(new Date(), new Date('2021-11-07'));
 
   isComponentVisible = false;
 

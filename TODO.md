@@ -1,11 +1,14 @@
 # TODO
 
-- [PRD] Load in production:
-  - post-prod: test on different devices (mobile, slower laptop) + test with mobile network
+- Deploy to firebase + to custom domain
+- Update accommodation suggestions
+- Remove covid guidelines?
+- Update carousel pictures? (in particular, replace the mairie d'Antibes one)
+- Confirm times: party start, baby-sitter time
+- Verify admin page
 
 # Bonus
 
-- hosting: load webapp in firebase hosting (ideally move owned .com domain name to firebase hosting)
 - header: add decorations (hearts?) between nav links
 - header: in mobile view, make header "semi-sticky" (appear on scroll-up)
 - header: in mobile view, when nav is expanded, replace hamburger icon by x icon

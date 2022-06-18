@@ -18,7 +18,7 @@ interface Countdown {
 })
 export class CountdownComponent {
 
-  weddingDate = new Date('2021-09-04 16:00');
+  weddingDate = new Date('2022-10-01 16:00');
 
   days$ = new BehaviorSubject<number | undefined>(undefined);
   hours$ = new BehaviorSubject<number | undefined>(undefined);
@@ -36,6 +36,7 @@ export class CountdownComponent {
   }
 
   createCountdownTimer(remainingSeconds: number): Observable<Countdown> {
+    remainingSeconds = Math.max(remainingSeconds, 1);
     return timer(0, 1000) // Every second
       .pipe(
         take(remainingSeconds), // During the remaining seconds only
