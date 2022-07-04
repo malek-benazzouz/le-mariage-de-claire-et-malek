@@ -1,11 +1,6 @@
 # TODO
 
-- Deploy to firebase + to custom domain
-- Update accommodation suggestions
-- Remove covid guidelines?
-- Update carousel pictures? (in particular, replace the mairie d'Antibes one)
 - Confirm times: party start, baby-sitter time
-- Verify admin page
 
 # Bonus
 

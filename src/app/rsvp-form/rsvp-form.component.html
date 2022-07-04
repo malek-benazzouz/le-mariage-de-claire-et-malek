@@ -158,7 +158,7 @@
           <h2 class="font-family-cursive my-4 text-center">Le point photo</h2>
 
           <p>
-            Nous avons besoin d’une photo de chaque invité lorsqu’il(elle) était enfant (âgé(e) de 1 à 7 ans).<br>
+            Nous avons besoin d’une photo de chaque invité lorsqu’il(elle) était enfant (âgé(e) de 1 à 7 ans), si vous ne l'avez pas déjà envoyée.<br>
             Voici pour exemple des photos de bébé Claire et bébé Malek&nbsp;:
           </p>
 
@@ -175,7 +175,7 @@
 
           <p>
             <mat-checkbox [formControl]="controls.acceptYoungPicConditions">
-              Je m’engage à envoyer une photo de ma p’tite tête,
+              J'ai envoyé, ou je m’engage à envoyer une photo de ma p’tite tête,
               celle de mon(ma) conjoint(e), et de mon(mes) enfant(s) dont j’ai confirmé la présence à l’adresse email
               <a class="text-primary" href="mailto:***REMOVED***">***REMOVED***</a>
               avant le 31 juillet 2022.
@@ -186,8 +186,8 @@
           </p>
         </div>
 
-        <!-- Covid conditions -->
-        <div
+        <!-- Covid conditions - Deprecated -->
+        <!-- <div
           [hidden]="controls.partyPresent.value === 'no' && (!controls.brunchSpecificity.value || controls.brunchPresent.value !== 'yes')">
           <hr>
           <h2 class="font-family-cursive my-4 text-center">Le point moins rigolo</h2>
@@ -202,7 +202,7 @@
           <p>
             Merci à tous pour votre compréhension, nous avons hâte de partager ces moments avec vous&nbsp;!
           </p>
-        </div>
+        </div> -->
 
         <!-- Leave us a message -->
         <hr>
