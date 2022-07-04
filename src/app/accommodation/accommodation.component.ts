@@ -1,5 +1,13 @@
+/* tslint:disable:max-line-length */
 import { Component, OnInit } from '@angular/core';
-import { faBook, faClock, faEuroSign, faHandPointDown, faMapMarkedAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBook,
+  faClock,
+  faEuroSign,
+  faHandPointDown,
+  faMapMarkedAlt,
+  faMapMarkerAlt
+} from '@fortawesome/free-solid-svg-icons';
 import { LoadingService } from '../loading/loading.service';
 
 @Component({
@@ -16,15 +24,15 @@ export class AccommodationComponent implements OnInit {
   priceIcon = faEuroSign;
   arrowDownIcon = faHandPointDown;
 
-  bookingLinkAccommodation1 = 'https://www.chambres-hotes.fr/chambres-hotes_la-haute-verrerie_le-cannet-des-maures_h3371048.htm';
-  itineraryLinkAccommodation1 = 'https://www.google.com/maps/dir/Domaine+des+Bertrands,+Le+Cannet-des-Maures/La+Haute+Verrerie,' +
-    '+83340+Le+Cannet-des-Maures/@43.3669944,6.3707257,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cc' +
-    'e!2m2!1d6.41233!2d43.367607!1m5!1m1!1s0x12c94b82c04cc16d:0x70fa9aa2259b7831!2m2!1d6.363665!2d43.375376!3e0';
+  bookingLinkAccommodation1 = 'https://www.chateausaintroux.com/';
+  itineraryLinkAccommodation1 = 'https://www.google.com/maps/dir/Chateau+des+Bertrands,+Route+de+la+Garde+Freinet,+83340+Le+Cannet-des-Maures/' +
+    'chateau+st+roux/@43.36833,6.3785196,14z/data=!4m13!4m12!1m5!1m1!1s0x12ceb50189993d0f:0x2e9e6264b1a8c8cc!2m2!1d6.4131904!2d43.3664648!1m5!1' +
+    'm1!1s0x12c94c78de5cd083:0x10300ee22d37c905!2m2!1d6.3705214!2d43.3795457';
 
-  bookingLinkAccommodation2 = 'https://rouquan.com/fr/';
-  itineraryLinkAccommodation2 = 'https://www.google.com/maps/dir/Domaine+des+Bertrands,+83340+Le+Cannet-des-Maures/Le+Mas+du+Rouquan' +
-    ',+Rd+48,+Vidauban/@43.3548628,6.4114327,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.412' +
-    '33!2d43.367607!1m5!1m1!1s0x12ceb48919ed24a7:0x8b96edd5d1ad31fb!2m2!1d6.4466154!2d43.3667061!3e0';
+  bookingLinkAccommodation2 = 'https://www.lesportesdeprovence.com/';
+  itineraryLinkAccommodation2 = 'https://www.google.com/maps/dir/Chateau+des+Bertrands,+Route+de+la+Garde+Freinet,+83340+Le+Cannet-des-Maures/H%C3%B4tel+Les+' +
+    'Portes+de+Provence,+220+RDN+7+CAP+7+quartier+causserene,+83340+Le+Cannet-des-Maures/@43.3764103,6.3628221,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x12ceb' +
+    '50189993d0f:0x2e9e6264b1a8c8cc!2m2!1d6.4131904!2d43.3664648!1m5!1m1!1s0x12c94c0cc5f69195:0xe903a087d4fdba5b!2m2!1d6.3473713!2d43.3921794 ';
 
   bookingLinkAccommodation3 = 'https://www.domaine-lacigaliere.com/fr/';
   itineraryLinkAccommodation3 = 'https://www.google.com/maps/dir/Domaine+des+Bertrands,+83340+Le+Cannet-des-Maures/Camping+Domaine+De+La' +
@@ -37,21 +45,22 @@ export class AccommodationComponent implements OnInit {
     '+83550+Vidauban/@43.3694434,6.4100028,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.41233!2d4' +
     '3.367607!1m5!1m1!1s0x12ceb3653b718f37:0x40ba970b2155b3cb!2m2!1d6.4407827!2d43.3893819!3e0';
 
-  bookingLinkAccommodation5 = 'https://www.booking.com/hotel/fr/idyllique-vidauban1.fr.html?aid=356980;label=gog235jc-1DCAsoTUITaWR' +
-    '5bGxpcXVlLXZpZGF1YmFuMUgNWANoTYgBAZgBDbgBF8gBDNgBA-gBAfgBAogCAagCA7gCpfe0hQbAAgHSAiRmNjFhMjE0Ny0zMjY4LTRjMjAtOGExOS1lOWI1ODUwY' +
-    'jkwNDDYAgTgAgE;sid=f99a4ced7d16ebee40a8d5fc8c5c0cf9;all_sr_blocks=667406501_273255493_2_0_0;checkin=2021-09-04;checkout=2021-09' +
-    '-05;dest_id=-1476137;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=667406501_273255493_2_0_0;' +
-    'hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=667406501_273255493_2_0_0__10400;srepoch=16219' +
-    '65799;srpvid=537a7ef33ccc022c;type=total;ucfs=1;sig=v13Y1GQ1jm#hotelTmpl';
-  itineraryLinkAccommodation5 = 'https://www.google.com/maps/dir/Domaine+des+Bertrands,+Le+Cannet-des-Maures/219+Chemin+de+la+Futaie,' +
-    '+83550+Vidauban/@43.382667,6.3714534,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.41233!2' +
-    'd43.367607!1m5!1m1!1s0x12ceb3730ea79491:0x9ba13df633a9c32!2m2!1d6.4433303!2d43.3965898!3e0';
+  bookingLinkAccommodation5 = 'https://www.lecannetdesmaures.com/component/adirectory/joomlannuaire/fiche/17-gite-t6-chateau-du-bouillidou%20/';
+  itineraryLinkAccommodation5 = 'https://www.google.com/maps/dir/Chateau+des+Bertrands,+Route+de+la+Garde+Freinet,+83340+Le+Cannet-des-Maures/' +
+    'Ch%C3%A2teau+Colbert+Cannet,+Chem.+du+Ch%C3%A2teau,+83340+Le+Cannet-des-Maures/@43.3770256,6.3608597,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x' +
+    '12ceb50189993d0f:0x2e9e6264b1a8c8cc!2m2!1d6.4131904!2d43.3664648!1m5!1m1!1s0x12c94c6d1ac2f0c9:0x8545a835503a3512!2m2!1d6.3446237!2d43.3954693';
 
-  bookingLinkAccommodation6 = 'https://www.le-clos-des-medievales.fr/fr';
+  bookingLinkAccommodation6 = 'https://www.le-clos-des-medievales.fr/';
   itineraryLinkAccommodation6 = 'https://www.google.com/maps/dir/Domaine+des+Bertrands,+Le+Cannet-des-Maures/Le+Clos+des+M%C3%A9di%C3%' +
     'A9vales,+43%C2%B027\'08.2%22N%2B6%C2%B018\'15.3%22E+le+Cols+des+M%C3%A9di%C3%A9vales,+83340+Le+Thoronet/@43.4054634,6.2885347,12z/' +
     'data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.41233!2d43.367607!1m5!1m1!1s0x12c94e11684949db:0x' +
     '3b8af3dc918a02b7!2m2!1d6.3043748!2d43.4523845!3e0';
+
+  bookingLinkAccommodation7 = 'https://www.lecannetdesmaures.com/ville-du-cannet-des-maures/ville-du-cannet-des-maures/ou-dormir-ou-manger/' +
+    'joomlannuaire/fiche/595-location-siasonneire-le-maure/4-hebergement-restauration';
+  itineraryLinkAccommodation7 = 'https://www.google.com/maps/dir/Chateau+des+Bertrands,+Route+de+la+Garde+Freinet,+83340+Le+Cannet-des-Maures/' +
+    'Voie+Aur%C3%A9lienne,+83340+Le+Cannet-des-Maures/@43.3757058,6.354815,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x12ceb50189993d0f:0x2e9e6264b1' +
+    'a8c8cc!2m2!1d6.4131904!2d43.3664648!1m5!1m1!1s0x12c94c05ac4e49a3:0xc404e268b71a02b5!2m2!1d6.331357!2d43.3918139';
 
   constructor(public loadingService: LoadingService) { }
 

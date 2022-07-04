@@ -16,6 +16,7 @@ const ALL_IMAGE_KEYS = [
   'picture-accommodation-4',
   'picture-accommodation-5',
   'picture-accommodation-6',
+  'picture-accommodation-7',
   'picture-antibes',
   'picture-bertrands',
   'picture-bertrands-entrance',
