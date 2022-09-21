@@ -16,10 +16,9 @@ export class ProgramDetailPartyComponent implements OnInit {
   smileIcon = faLaugh;
   phoneIcon = faPhoneAlt;
 
-  itineraryLinkBertrands = 'https://www.google.com/maps/dir/Ville+d\'Antibes+Juan-les-Pins,+Cours+Mass%C3%A9na,+Antibes/' +
-    'Domaine+des+Bertrands,+Le+Cannet-des-Maures/@43.4277837,6.4806189,10.75z/data=!4m19!4m18!1m10!1m1!1s0x12cdd56b4ae20fc' +
-    'b:0x493ac71612527506!2m2!1d7.1278308!2d43.5813427!3m4!1m2!1d6.4038349!2d43.3583245!3s0x12c94b346d3cbe95:0x8c63a5e183e1' +
-    '64d6!1m5!1m1!1s0x12ceb4b3ef467259:0xf2f64da5b35d2cce!2m2!1d6.41233!2d43.367607!3e0';
+  itineraryLinkBertrands = 'https://www.google.com/maps/place/Chateau+des+Bertrands/@43.3664857,6.4111034,17z/' +
+    'data=!3m1!4b1!4m9!3m8!1s0x12ceb50189993d0f:0x2e9e6264b1a8c8cc!5m2!4m1!1i2!8m2!3d43.3664857!4d6.4132921!16s%2' +
+    'Fg%2F11h3c4kd7y';
 
   constructor(public loadingService: LoadingService) {}
 
