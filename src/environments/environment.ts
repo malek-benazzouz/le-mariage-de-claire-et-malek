@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
+    // Public key - it is OK to store in the source code. See https://firebase.google.com/docs/projects/api-keys
     apiKey: 'AIzaSyBrsiu5SbssDFb72hP-L4NotXBkwL8oUIY',
     authDomain: 'mariagecm-backend.firebaseapp.com',
     projectId: 'mariagecm-backend',
